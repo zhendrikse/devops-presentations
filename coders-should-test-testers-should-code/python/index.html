@@ -27,7 +27,7 @@ class: center, middle
 
 ## in Python with Mamba
 
-([using replit.com](https://replit.com/@zwh/TddStackPythonMamba))
+([using replit.com](https://replit.com/@zwh/Stack-with-TDD-Python-and-Mamba#README.md))
 
 ---
 # First verify we can write a test
@@ -84,39 +84,8 @@ with description(Stack) as self:
 class Stack:
   pass
 
-  def isEmpty(self):
+  def isEmpty(self) -&gt; bool:
     return True
-```
-
----
-
---
-
-###Which results in:
-
-![Output](images/stack1.png)
-
----
-
-## An empty stack should be... empty?
-
-```javascript
-describe("A new stack", function () {
-  it("should be empty", function () {
-    var myStack = new Stack()
-    expect(myStack.isEmpty()).toEqual(true);
-  })
-})
-```
---
-
-### For this we need
-```javascript
-class Stack {
-  isEmpty() {
-    return true
-  }
-}
 ```
 
 ---
@@ -132,25 +101,22 @@ class Stack {
 ---
 ## Pop on an empty stack
 
-```javascript
-...
-  it("should throw an exception on a pop operation", function() {
-    var myStack = new Stack()
-    expect( function(){ myStack.pop() } )
-      .toThrow(new Error("Stack underflow"));
-  })
+```python
+    ...
+    with it("should throw an exception on a pop operation"):
+      myStack = Stack()
+      expect(myStack.pop).to(raise_error(KeyError))
 ...
 ```
 --
 
-### For this we need
-```javascript
-class Stack {
-  ...
-  pop() {
-    throw new Error("Stack underflow")
-  }
-}
+```python
+class Stack:
+  def isEmpty(self) -&gt; bool:
+    return True
+
+  def pop(self) -&gt; int:
+    raise KeyError("Stack underflow")
 ```
 
 ---
@@ -158,23 +124,21 @@ class Stack {
 
 ### DRY
 
-```javascript
-describe("A new stack", function () {
-  var myStack;
+```python
+from mamba import description, it, context, before
+from expects import expect, equal, raise_error
+from stack import Stack
 
-  beforeEach(function() {
-      myStack = new Stack()
-  })
+with description(Stack) as self:
+  with before.each:
+    self.myStack = Stack()
 
-  it("should be empty", function () {
-    expect(myStack.isEmpty()).toEqual(true);
-  })
+  with context("When new"):
+    with it("should be empty"):
+      expect(self.myStack.isEmpty()).to(equal(True))
 
-  it("should throw an exception on a pop operation", function() {
-    expect( function(){ myStack.pop() } )
-      .toThrow(new Error("Stack underflow"));
-  })
-})
+    with it("should throw an exception on a pop operation"):
+      expect(self.myStack.pop).to(raise_error(KeyError))
 ```
 
 ---
@@ -190,83 +154,72 @@ describe("A new stack", function () {
 ---
 ## Push something onto the stack
 
-```javascript
-...
-  it("should not be empty after a push operation", function() {
-    myStack.push(8)
-    expect(myStack.isEmpty()).toEqual(false);
-  })
-...
+```python
+    ...
+    with it("should not be empty after a push operation"):
+      self.myStack.push(8)
+      expect(self.myStack.isEmpty()).to(equal(False))
 ```
 --
 
-```javascript
-class Stack {
-  constructor() {
-    this.stackIsEmtpy = true
-  }
+```python
+class Stack:
+  def __init__(self):
+    self.is_empty: bool = True
 
-  isEmpty() {
-    return this.stackIsEmtpy
-  }
+  def isEmpty(self) -&gt; bool:
+    return self.is_empty
 
-  push(newElement) {
-    this.stackIsEmtpy = false
-  }
-  ...
+  def pop(self) -&gt; int:
+    raise KeyError("Stack underflow")
+
+  def push(self, newElement:int) -&gt; None:
+    self.is_empty = False
 ```
 
 ---
 ## ... And pop it from the stack
 
-```javascript
-  it("should be empty after one push and one pop", function() {
-    myStack.push(8)
-    myStack.pop()
-    expect(myStack.isEmpty()).toEqual(true);
-  })
+```python
+    ...
+    with it("should be empty after one push and one pop"):
+      self.myStack.push(8)
+      self.myStack.pop()
+      expect(self.myStack.isEmpty()).to(equal(True))
 ```
 
 --
 
-```javascript
-class Stack {
+```python
+  ...
+  def pop(self) -&gt; int:
+    if (self.is_empty == True):
+      raise KeyError("Stack underflow")
+    self.is_empty = True
   ...
 
-  pop() {
-    if (this.stackIsEmtpy)
-      throw new Error("Stack underflow")
-    this.stackIsEmtpy = true
-  }
-  ...
 ```
 
 ---
 ## DRY revisited
 
-```javascript
-describe("A new stack", function () {
-  var myStack;
-
-  beforeEach(function () {
-    myStack = new Stack()
-  })
-
+```python
+with description(Stack) as self:
   ...
 
-  describe("which had one push", function () {
-    beforeEach(function () {
-      myStack.push(8)
-    })
-    it("should not be empty", function () {
-      expect(myStack.isEmpty()).toEqual(false);
-    })
-    it("should be empty after one pop", function () {
-      myStack.pop()
-      expect(myStack.isEmpty()).toEqual(true);
-    })
-  })
-})
+  with context("When new"):
+    ...
+
+  with context("When has one element pushed"):
+    with before.each:
+      self.myStack.push(8)
+
+    with it("should not be empty"):
+      expect(self.myStack.isEmpty()).to(equal(False))
+
+    with it("should be empty after one pop"):
+      self.myStack.pop()
+      expect(self.myStack.isEmpty()).to(equal(True))
 ```
 
 ---
