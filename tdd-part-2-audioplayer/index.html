@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audioplayer in Javascript with Jasmine using TDD</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: inverse
+layout: true
+---
+class: center, middle
+
+# Implementing an audioplayer
+
+## in Javascript with Jasmine
+
+([using replit.com](https://replit.com/@zwh/Audioplayer-with-TDD-Javascript-and-Jasmine#README.md))
+
+---
+
+# Goals of this workshop
+
+- To demonstrate more advanced concepts
+  - Delegates
+  - Mocks, spies, etc.
+
+---
+
+## Initial set-up
+
+```javascript
+describe('Given new audioplayer', function () {
+  describe('When looking at the display', function () {
+    var myAudioplayer = new Audioplayer(["MyGreatSong.mp3", "MyUpbeatSong.mp3", "MyWorkoutSong.mp3", "MyRelaxSong.mp3", "MyFavouriteSong.mp3"])
+    it('should show the status of the first song to play', function () {
+      expect(myAudioplayer.currentSong()).toEqual("play: MyGreatSong.mp3")
+    })
+  })
+})
+```
+
+--
+
+```javascript
+class Audioplayer {
+  constructor(myPlayList) {
+    this.playList = myPlayList
+  }
+
+  currentSong() {
+    return "play: " + this.playList[0]
+  }
+}
+```
+
+---
+
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+var slideshow = remark.create({
+  // Customize slide number label, either using a format string..
+  slideNumberFormat: 'Slide %current% of %total%',
+  // .. or by using a format function
+  slideNumberFormat: function (current, total) {
+    return 'Slide ' + current + ' of ' + total;
+  },
+
+  countIncrementalSlides: false,
+  highlightLanguage: 'java',
+  highlightStyle: 'monokai',
+}); 
+    </script>
+  </body>
+</html>
