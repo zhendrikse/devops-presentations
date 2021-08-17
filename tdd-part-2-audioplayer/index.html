@@ -39,12 +39,22 @@ class: center, middle
 
 ---
 
+# First user story
+
+As a music lover
+
+I want to be able to play my playlist
+
+so that I can enjoy my favourite music
+
+---
+
 ## Initial set-up
 
 ```javascript
 describe('Given new audioplayer', function () {
   describe('When looking at the display', function () {
-    var myAudioplayer = new Audioplayer(["MyGreatSong.mp3", "MyUpbeatSong.mp3", "MyWorkoutSong.mp3", "MyRelaxSong.mp3", "MyFavouriteSong.mp3"])
+Y    var myAudioplayer = new Audioplayer(["MyGreatSong.mp3", "MyUpbeatSong.mp3", "MyWorkoutSong.mp3", "MyRelaxSong.mp3", "MyFavouriteSong.mp3"])
     it('should show the status of the first song to play', function () {
       expect(myAudioplayer.currentSong()).toEqual("play: MyGreatSong.mp3")
     })
@@ -68,8 +78,160 @@ class Audioplayer {
 
 ---
 
+## The play/pause button status
 
+```javascript
+...
+    it('should display a play button', function () {
+      expect(myAudioplayer.isButtonPlay()).toEqual(true)
+    })
+...
+```
 
+--
+
+```javascript
+...
+  isButtonPlay() {
+    return true
+  }
+...
+```
+
+---
+
+## Play a song - test case
+
+```javascript
+  describe('When play/pause is pressed', function () {
+    var myAudioplayer = new Audioplayer(["MyGreatSong.mp3", "MyUpbeatSong.mp3", "MyWorkoutSong.mp3", "MyRelaxSong.mp3", "MyFavouriteSong.mp3"])
+    it('should show the status of the first song now playing', function () {
+      myAudioplayer.playPause()
+      expect(myAudioplayer.currentSong()).toEqual("now playing: MyGreatSong.mp3")
+      expect(myAudioplayer.isButtonPlay()).toEqual(false)
+    })
+  })
+```
+
+---
+
+## Play a song - code
+
+```javascript
+class Audioplayer {
+  constructor(myPlayList) {
+    this.playList = myPlayList
+    this.isPlaying = false;
+  }
+
+  currentSong() {
+    if (this.isPlaying)
+      return "now playing: " + this.playList[0]
+    return "play: " + this.playList[0]
+  }
+
+  isButtonPlay() {
+    return !this.isPlaying
+  }
+
+  playPause() {
+    this.isPlaying = true
+  }
+}
+```
+---
+
+## Refactor time (DRY)!
+
+```javascript
+describe('Given new audioplayer', function () {
+  var myAudioplayer, playList
+
+  beforeEach(function () {
+    playList = ["MyGreatSong.mp3", "MyUpbeatSong.mp3", "MyWorkoutSong.mp3", "MyRelaxSong.mp3", "MyFavouriteSong.mp3"]
+    myAudioplayer = new Audioplayer(playList)
+  })
+
+  describe('When looking at the display', function () {
+    it('should show the status of the first song to play', function () {
+      expect(myAudioplayer.currentSong()).toEqual("play: " + playList[0])
+    })
+    it('should display a play button', function () {
+      expect(myAudioplayer.isButtonPlay()).toEqual(true)
+    })
+  })
+
+  describe('When play/pause is pressed', function () {
+    it('should show the status of the first song now playing', function () {
+      myAudioplayer.playPause()
+      expect(myAudioplayer.currentSong()).toEqual("now playing: " + playList[0])
+      expect(myAudioplayer.isButtonPlay()).toEqual(false)
+    })
+  })
+})
+```
+--
+
+## Resuming play
+
+```javascript
+  describe('When play/pause is pressed', function () {
+    ...
+
+    describe('When play/pause is pressed again', function () {
+      it('should change the status of the first song to play', function () {
+        myAudioplayer.playPause()
+        myAudioplayer.playPause()
+        expect(myAudioplayer.currentSong()).toEqual("play: " + playList[0])
+        expect(myAudioplayer.isButtonPlay()).toEqual(true)
+      })
+    })
+```
+
+--
+
+```javascript
+
+  playPause() {
+    this.isPlaying = !this.isPlaying
+  }
+```
+
+---
+
+# Second user story
+
+As a music lover
+
+I want to be able to press the previous track button endlessly, even if I am already at my first song in the playlist
+
+so that I don't have to worry how many keypress I have to make to get at the start of my playlist.
+
+---
+
+## Pressing previous track like a mad man
+
+```javascript
+  describe('When looking at the display', function () {
+    ...
+
+    describe('When previous track is pressed', function () {
+      it('should be ignored as the first track is already being played', function () {
+        spyOn(myAudioplayer, "previousTrack")
+        myAudioplayer.previousTrack()
+        expect(myAudioplayer.previousTrack).toHaveBeenCalled();
+      })
+    })
+```
+
+--
+
+```javascript
+class Audioplayer {
+...
+  previousTrack() {}
+}
+``` 
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
