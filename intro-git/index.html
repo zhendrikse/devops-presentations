@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction VCS/Git</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+#Introduction to Git
+
+![Git](./images/Git-Icon.png)
+
+Titus Nachbauer &amp; Zeger Hendrikse
+
+---
+
+# Agenda
+
+1. Introduction / Theory
+2. Practice
+3. Branches
+4. Practice
+5. Questions
+
+---
+
+# First question: What is CI?
+
+### What is CI?
+
+* **A**: Continuous Improvement
+* **B**: Continuous Inspection
+* **C**: Continuous Integration
+* **D**: Continuous Insights
+
+---
+
+# Context: What is CI?
+
+### What is CI?
+
+* **A**: Continuous Improvement
+* **B**: Continuous Inspection
+* **C**: **==&gt;** Continuous Integration **&lt;==**
+* **D**: Continuous Insights
+
+---
+
+# Context: Continuous Integration
+
+![CI](./images/sdp_ci.png)
+
+---
+
+# Context: Continuous Integration
+
+![CI](./images/what_is_ci.png)
+
+--
+
+See also [the CI section](https://confluence.aws.abnamro.org/pages/viewpage.action?pageId=180843849)
+on the [software development pages](https://confluence.aws.abnamro.org/display/GRIDAD/Software+Development) 
+
+---
+
+# Second question: CI practice
+
+### Which of the following is NOT a CI best practice?
+
+* **A**: Deploy the code to a test environment
+* **B**: Keep the build fast
+* **C**: Everyone commits to the baseline everyday
+* **D**: When the build fails, everybody stops and helps to fix the build
+
+---
+
+# Second question: CI practice
+
+### Which of the following is NOT a CI best practice?
+
+* **==&gt;A**: Deploy the code to a test environment **&lt;==**
+* **B**: Keep the build fast
+* **C**: Everyone commits to the baseline everyday
+* **D**: When the build fails, everybody stops and helps to fix the build
+
+---
+
+# Why Use a Version Control System?
+
+--
+- Collaboration
+
+--
+- Storing multiple versions (properly)
+
+--
+- Restoring Previous Versions
+
+--
+- Understanding What Happened
+
+--
+- Backup
+
+---
+
+#Centralized Version Control (VCS)
+
+![Centralized VCS](./images/version-control-fig2.png)
+
+--
+
+- [CVS](https://en.wikipedia.org/wiki/Concurrent_Versions_System)
+--
+
+- [RCS](https://en.wikipedia.org/wiki/Revision_Control_System)
+
+---
+
+#Distributed Version Control (DVCS)
+
+![Distributed VCS](./images/version-control-fig3.png)
+
+--
+
+- [Git](https://git-scm.com/)
+--
+
+- [Mercurial](https://www.mercurial-scm.org/)
+
+---
+
+#Git is a DVCS
+
+![Distributed VCS](./images/gitlab_flow_four_stages.png)
+
+---
+
+# Git commands
+
+![Commands](./images/commands.png)
+
+---
+# Let's practice
+
+### Scenario 1, two, and 3
+
+- [O'reilly](https://www.katacoda.com/courses/git), 
+  Learn Git Version Control using Interactive Browser-Based Scenarios
+
+---
+
+# Git Background
+
+- Developed by Linus Torvalds
+  - Take CVS as an example of what _not_ to do; 
+    if in doubt, make the exact opposite decision.
+  - Support a distributed, BitKeeper-like workflow
+  - Strong safeguards against corruption, either accidental or malicious
+--
+
+- Originally developed with open source projects in mind
+--
+
+- Often praised for its branching support
+
+---
+
+# Git-like systems
+
+- [BitBucket](https://bitbucket.org/) (Atlassian)
+- [GitHub](https://github.com/) (Microsoft)
+- [GitLab](https://gitlab.com/) (Originally Dutch)
+- [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/)
+- Etc.
+
+---
+
+# Resources on the Internet
+
+- [Version control concepts and best practices](https://homes.cs.washington.edu/~mernst/advice/version-control.html) (hard core text)
+- [Interactive Git Tutorials](https://www.webfx.com/blog/web-design/interactive-git-tutorials/) (graphical and interactive)
+- [Favorite Free Courses](https://medium.com/@javinpaul/top-10-free-courses-to-learn-git-and-github-best-of-lot-967aa314ea)
+- [O'reilly](https://www.katacoda.com/courses/git), 
+  Learn Git Version Control using Interactive Browser-Based Scenarios
+
+---
+# Let's practice
+
+### Scenario 4 and 5 
+
+- [O'reilly](https://www.katacoda.com/courses/git), 
+  Learn Git Version Control using Interactive Browser-Based Scenarios
+
+---
+
+# What's the fuzz about branches?
+
+--
+
+![Branches](./images/branches_intro.png)
+
+---
+
+# Git and branches
+
+- Git has excellent support for branches
+  - From then on, the world started branching...
+--
+
+- Can you think of advantages?
+--
+
+- Can you think of disadvantages?
+
+---
+
+# TDB: small and frequent commits
+
+### Low-frequency integration
+
+![Merging](./images/merge_1.png)
+
+Suppose S1 and V1 contain a merge conflict...
+
+---
+
+# TDB: small and frequent commits
+
+### Low-frequency integration
+
+![Merging](./images/merge_2.png)
+
+... merge conflicts are late and big!
+
+---
+
+# TDB: small and frequent commits
+
+### High-frequency integration
+
+![Merging](./images/merge_3.png)
+
+Suppose S1 and V1 contain a merge conflict...
+
+---
+
+# TBD: small and frequent commits
+
+### High-frequency integration
+
+![Merging](./images/merge_4.png)
+
+... merge conflicts are small and early!
+---
+
+# Trunk Based Development (TBD)
+
+> _The trunk-based development is all about communication. We use version_
+  _control to communicate what we're doing to the rest of the team. To do it_
+  _regularly enough, we have to work in very small batches._
+
+>  -[Jez Humble](https://github.com/rht-labs/enablement-docs/issues/123)
+
+--
+
+### Rules for TBD
+- Small commits (approx 10 - 15 lines)
+- Commits (_self contained_ and _consisten_) include production and test code
+- Always commit and push together
+- **NO** branches
+- _All code pulls_ are _always_ reviewed by _all team members_
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+var slideshow = remark.create({
+  // Customize slide number label, either using a format string..
+  slideNumberFormat: 'Slide %current% of %total%',
+  // .. or by using a format function
+  slideNumberFormat: function (current, total) {
+    return 'Slide ' + current + ' of ' + total;
+  },
+
+  countIncrementalSlides: false,
+  highlightLanguage: 'java',
+  highlightStyle: 'monokai',
+}); 
+    </script>
+  </body>
+</html>
