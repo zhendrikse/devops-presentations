@@ -212,16 +212,13 @@ so that I don't have to worry how many keypress I have to make to get at the sta
 ## Pressing previous track like a mad man
 
 ```javascript
-  describe('When looking at the display', function () {
-    ...
-
-    describe('When previous track is pressed', function () {
-      it('should be ignored as the first track is already being played', function () {
-        spyOn(myAudioplayer, "previousTrack")
-        myAudioplayer.previousTrack()
-        expect(myAudioplayer.previousTrack).toHaveBeenCalled();
-      })
+  describe('When previous track is pressed', function () {
+    it('should be ignored as the first track is already being played', function () {
+      spyOn(myAudioplayer, "previousTrack")
+      myAudioplayer.previousTrack()
+      expect(myAudioplayer.previousTrack).toHaveBeenCalled();
     })
+  })
 ```
 
 --
