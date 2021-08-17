@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction Python</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+![Python](./images/python.png)
+
+---
+
+# Agenda
+
+--
+1. Introduction
+
+--
+2. Motivation
+
+--
+3. Language constructs
+
+--
+4. Programming paradigms
+
+--
+5. Quiz
+
+--
+6. Testing
+
+--
+7. Examples
+
+---
+
+# Not covered
+
+--
+1. Developing using IDE support (Intellij/PyCharm/PyDev)
+
+--
+2. PIP installer
+
+--
+3. Differences between Python 2 and 3
+
+--
+4. Python virtual env
+
+--
+5. Import / namespacing / libraries / packages
+
+---
+
+# Introduction
+
+---
+
+[![Zeger Hendrikse](./images/zeger.png)](https://www.baeldung.com/authors)
+
+---
+
+## Slides
+
+- Slides created in [Remark](https://github.com/gnab/remark)
+- Alternatives I considered:
+  - [Reveal](https://revealjs.com/#/)
+  - [Prezi](https://prezi.com/about/)
+  - [Impress](https://impress.js.org/#/bored)
+
+
+## Python environment for exercises
+
+- Leightweight: [Python Online Compiler](https://www.programiz.com/python-programming/online-compiler/)
+- Online Python [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
+  - Python REPL from [repl.it](https://en.wikipedia.org/wiki/Repl.it) 
+    - [repl.it for Python](https://repl.it/@enaard/Python-3)
+    - [repl.it for Java](https://repl.it/@pinar2/Java)
+    - [Other languages](https://repl.it/languages)
+- Even better, use your own Python installation!
+
+---
+
+# Motivation
+
+---
+
+# ![Popular languages](./images/most_popular_coding_languages_of_2019.jpg)
+
+---
+
+# [Top 20 languages](https://stackify.com/popular-programming-languages-2018/)
+
+![Ranking](./images/ranking.png)
+
+---
+
+# [Long term history](https://stackify.com/popular-programming-languages-2018/)
+
+![Trends](./images/trends.png)
+
+---
+
+# Quiz
+
+- Why is Java so popular?
+--
+
+  - Portable 
+  - Scalable
+  - Large community
+
+- Why is C (still) so popular?
+--
+
+  - Portable assembly language
+  - Embedded systems (cars, electronics)
+
+---
+
+# Why Python?
+
+## Portable 
+
+![Platforms](./images/python-all-platforms.png)
+
+---
+
+# Why Python?
+
+## Machine learning / AI / Robotics 
+
+![Machine learning](./images/machine-learning.png)
+
+---
+
+# Why Python?
+
+## Visualizations 
+
+![Visualisations](./images/visualization-tools.png)
+
+---
+
+# Why Python?
+
+## Big data 
+
+![Big data](./images/python-big-data.jpg)
+
+---
+
+# Why Python?
+
+## Simplicity / quick coding
+
+Java:
+```java
+package nl.mycompany.myapp;
+
+public class Simple {
+    public static void main(final String args[]) {
+        System.out.println("Welcome to Java");
+    }
+}
+``` 
+
+Python:
+```python
+print("Welcome to Python")
+```
+
+---
+
+# Why Python?
+
+## Academia
+
+![Learn python](./images/python-powered-university.png)
+
+---
+
+# Python fun facts
+
+- Python was introduced by ... 
+--
+  <!-- Guido *benevolent dictator* van Rossum -->
+  Kahoot quiz question!
+
+- The name is based on ...
+--
+  <!-- Rossum's favorite television shows, Monty Python's Flying Circus -->
+  Kahoot quiz question!
+
+- Python is written in ...
+--
+  <!-- C programming language -->
+  Kahoot quiz question! 
+
+- Easter egg/The Zen of Python
+--
+
+```python
+Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 01:54:44) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; import this
+```
+
+---
+
+# The Zen of Python
+
+![Python Zen](./images/zen-python-facts.png)
+
+---
+
+# Learning Python 
+
+- [LearnPython.org](https://learnpython.org/)
+- [Practice Python](https://www.practicepython.org/)
+- [Python for beginners](https://www.python.org/about/gettingstarted/)
+- [Whirlwind tour of Python](./Whirlwind-Tour-of-Python.pdf) (free book!)
+
+---
+
+# Python development
+
+- [Atom and Python](https://www.youtube.com/watch?v=DjEuROpsvp4)
+- [Notepad++ and Python](https://notepad-plus-plus.org/downloads/)
+- [PyCharm](https://www.jetbrains.com/pycharm/)
+- [Intellij](https://www.jetbrains.com/idea/)
+- [PyDev](https://www.pydev.org/) (Python IDE for Eclipse)
+
+---
+
+# Language constructs
+
+---
+
+# Python fundamentals - 1
+
+- _Everything_ is an object in Python
+- Objects have _attributes_ and _methods_
+
+    ```python 
+    x = 4.0
+    type(x)
+    print(x.real, "+", x.imag, "i") 
+    print(x.is_integer())
+    ```
+
+---
+
+# Python fundamentals - 2
+
+- End-of-line terminates statement, ";" is optional
+--
+
+- Blocks are delimited by _whitespace_: 
+
+    ```python
+    for i in range(100):
+        total += i
+    ```
+--
+
+- Single and double quotes are valid
+   
+    ```python
+    my_string_1 = 'Hello "Python"'
+    my_string_2 = "Hello 'Python'"
+    ```
+
+---
+
+# Python fundamentals - 3
+
+- Print function is often used and versatile 
+
+--
+- Signature
+
+  `print(object(s), sep=separator, end=end, file=file, flush=flush)`
+
+  ```python 
+  print("Hello", "how are you?", sep="---", end="\r\r\r")
+  x = 4.0
+  y = 5.0
+  print("The value of (x,y) = (%s, %s)"%(x, y ))
+  ```
+
+---
+
+# Python operators - 1
+
+| Operator	|  	| Name           	|   	| Description                	|
+|--------	|---	|----------------	|---	|----------------------------	|
+| `a + b`  	|   	| Addition       	|   	| Sum of a and b             	|
+| `a - b`  	|   	| Subtraction    	|   	| Difference of a and b      	|
+| `a * b`  	|   	| Multiplication 	|   	| Product of a and b         	|
+| `a / b`  	|   	| True division  	|   	| Quotient of a and b        	|
+| `a // b` 	|   	| Floor division 	|   	| Remove fraction            	|
+| `a % b`  	|   	| Modulus        	|   	| Remainder after division   	|
+| `a ** b` 	|   	| Exponentiation 	|   	| a raised to the power of b 	|
+| `-a`     	|   	| Negation       	|   	| The negative of a          	|
+| `+a`     	|   	| Unary plus     	|   	| Leaves a unchanged         	|
+
+---
+
+# Python operators - 2
+
+- Boolean operators
+
+  ```python
+  x = 4
+  print( (x &lt; 6) and (x &gt; 2) )
+  print( (x &gt; 10) or (x % 2 == 0) )
+  print( not (x &lt; 6) )
+  ```
+--
+
+- Membership operators
+
+  ```python
+  a = [1, 2, 3]
+  print(1 in a)
+  print(2 not in a)
+  ```
+--
+
+- Identity operators
+
+  ```python
+  a = [1, 2, 3]
+  b = [1, 2, 3]
+  print(a == b)
+  print(a is b)
+  print(a is not b)
+  ```
+
+---
+
+# Python operators - 3
+
+- Caveat: `+` and `-` are unary operators!
+
+  ```python
+  &gt;&gt;&gt; spam = 42
+  &gt;&gt;&gt; spam = ++spam
+  &gt;&gt;&gt; spam
+  42
+  &gt;&gt;&gt; spam = --spam
+  &gt;&gt;&gt; spam
+  42
+  ```
+--
+
+- After the variable isn't even possible!
+  ```python
+  &gt;&gt;&gt; spam++
+    File "&lt;stdin&gt;", line 1
+        spam++
+	         ^
+		 SyntaxError: invalid syntax
+  ```
+		 
+---
+
+# Variable assignments
+
+Examples:
+
+```python
+i = 0;
+my_var = "hallo"
+a, b, c = 1, 2, 3
+```
+--
+
+Input from console:
+
+```python
+name = input("What is your name: ")
+age = int(input("How old are you: "))
+year = str((2014 - age)+100)
+print(name + " will be 100 years old in the year " + year)
+```
+
+---
+
+# Comments in Python
+
+Single line:
+```python
+print("This will run.")  # This won't run
+```
+--
+Multi line (note the indentation and naming convention!):
+```python
+def multiline_example():
+    # This is a pretty good example
+    # of how you can spread comments
+    # over multiple lines in Python
+
+```
+--
+Multi line:
+ ```python
+ """
+ If I really hate pressing `enter` and
+ typing all those hash marks, I could
+ just do this instead
+ """
+ ```
+
+---
+
+# Types
+
+| Type     	|   	| Example    	|   	| Description                     	|
+|----------	|---	|------------	|---	|---------------------------------	|
+| `int`      	|   	| `x = 1`      	|   	| Integer (natural) numbers       	|
+| `float`    	|   	| `x = 1.0`    	|   	| Floating-point (real) numbers   	|
+| `complex`  	|   	| `x = 1 + 2j` 	|   	| Complex numbers                 	|
+| `bool`     	|   	| `x = True`   	|   	| Boolean values                  	|
+| `str`      	|   	| `x = 'abc'`  	|   	| Strings                         	|
+| `NoneType` (*)  |   	| `x = None`   	|   	| Special object indicating nulls 	|
+
+(*) Default return value of a function
+```ptyhon
+return_value = print("Dummy text")
+print(return_value)
+``` 
+
+---
+
+# Defining a main in Python
+
+This enables you to create a file:
+
+```python
+# this means that if this script is executed, then 
+# main() will be executed
+if __name__ == '__main__':
+    # do your stuff here
+ ```
+--
+
+and execute it:
+
+ ```bash
+ $ python my_file.py
+ ```
+---
+
+# Loops - 1
+
+- While:
+
+  ```python
+  i = 0
+  while (i &lt;= 5):
+      print(i)
+      i +=1
+  ``` 
+--
+
+- For-next:
+
+  ```python
+  my_list = 1,2,3,4,5
+  for i in range(len(my_list)):
+      print(my_list[i])
+  ``` 
+
+---
+
+# Loops - 2
+
+### Exercise 
+Generate the following output (nested for-next)
+```python
+*
+**
+***
+****
+*****
+```
+
+--
+
+Nested for-next:
+```python
+n = 5
+for i in range(0, n):
+    for j in range(0, i + 1):
+        print("* ", end = "")
+    print("\r")
+``` 
+
+---
+
+# Loops - 3 
+
+Loop over list:
+```python
+for i in [1, 2, 3, 4]:
+    print(i)
+```
+--
+
+Loop over string:
+```python
+for c in "python":
+    print(c)
+```
+--
+
+Loop over dictionary:
+```python
+my_dict = { 'firstname': 'Jan', 'lastname': 'Puk' }
+for i in my_dict:
+    print(i, my_dict[i])
+```
+--
+
+Loop over file, it loops over lines of the file:
+
+```ptyhon
+for line in open("a.txt"):
+    print(line, end="")
+```
+
+---
+
+# Conditionals
+
+```python
+a = 5
+b = 10
+
+if a &gt; b:
+    print("a is greater than b")
+elif a &lt; b:
+    print("b is greater than a")
+else:
+    print("a is equal to b")
+```
+
+---
+
+# Exercise
+
+Decide whether a given number is even or odd:
+
+```python
+Enter a number: 5
+You picked an odd number.
+```
+
+--
+
+Solution:
+
+```python
+num = input("Enter a number: ")
+mod = int(num % 2)
+if mod &gt; 0:
+        print("You picked an odd number.")
+    else:
+        print("You picked an even number.")
+```
+
+---
+
+# Else clauses on for-loop
+
+```python
+&gt;&gt;&gt; for n in range(2, 10):
+...     for x in range(2, n):
+...         if n % x == 0:
+...             print(n, 'equals', x, '*', n//x)
+...             break
+...     else:
+...         # loop fell through without finding a factor
+...         print(n, 'is a prime number')
+...
+2 is a prime number
+3 is a prime number
+4 equals 2 * 2
+5 is a prime number
+6 equals 2 * 3
+7 is a prime number
+8 equals 2 * 4
+9 equals 3 * 3
+```
+
+---
+
+# Functions
+
+```python
+def my_function():
+    print("Hello From My Function!")
+
+def my_function_with_args(username, greeting):
+    print("Hello, %s , From My Function!, I wish you %s"%(username, greeting))
+
+def sum_two_numbers(a, b):
+    return a + b
+```
+
+Defining a main in Python
+
+```python
+# this means that if this script is executed, then 
+# main() will be executed
+if __name__ == '__main__':
+    main()
+ ```
+---
+
+# Exercise
+
+Write a (recursive?) function that calculates the nth Fibonacci number:
+  - 1, 1, 2, 3, 5, 8, 13, 21, ...
+
+--
+```python
+&gt;&gt;&gt; def fib(n):
+...     if (n == 1 or n == 2):
+...         return 1
+...     else:
+...         return fib(n - 2) + fib(n - 1)
+&gt;&gt;&gt; for i in range(1, 10):
+...     print(fib(i))
+```
+
+---
+
+# Python characteristics
+
+- [Interpreted language](https://www.geeksforgeeks.org/compiler-vs-interpreter-2/)
+- [Released in 1991](https://en.wikipedia.org/wiki/History_of_Python)
+- [Garbage collected](https://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29)
+
+---
+
+# [Type inference](https://en.wikipedia.org/wiki/Type_inference)
+
+## Type of a variable is inferred:
+
+```python
+thing = "Hello"
+type(thing)
+
+thing = 28.1
+type(thing)
+```
+
+---
+
+# [Strongly typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
+ 
+## Types cannot be coerced:
+
+```python
+my_var = 1 + "two"  # This is type checked, and a TypeError is raised
+```
+
+---
+
+# [Dynamically typed](https://en.wikipedia.org/wiki/Dynamic_programming_language)
+
+## Run-time type checking
+
+```python
+if False:
+    1 + "two"  # This line never runs, so no TypeError is raised
+else:
+    1 + 2
+```
+
+- From [this post](https://herbsutter.com/2008/06/20/type-inference-vs-staticdynamic-typing/amp/)
+  - dynamic: type of an object as determined at run-time
+  - static: type of an object as known to the compiler based on its declaration
+- Static typing possible from 3.6 using
+  - [PyCharm](https://www.jetbrains.com/pycharm/) and/or 
+  - [MyPy](http://mypy-lang.org/)
+- [Type inference vs. Static/Dynamic typing](https://herbsutter.com/2008/06/20/type-inference-vs-staticdynamic-typing/amp/)
+
+---
+
+# Why Dynamic Typing
+
+- Read [what Martin Fowler says](https://martinfowler.com/bliki/DynamicTyping.html)
+- Use [type hinting](https://realpython.com/python-type-checking)
+
+---
+
+# [Type Hinting](https://realpython.com/python-type-checking)
+
+```python
+def _categorise(cls, income_variables: DataFrame, period: int) -&gt; DataFrame:
+```
+
+- It is direct clear what types are needed when calling a method
+- No comments on parameters needed
+- IDE knows return type -&gt; intellisense as a bonus
+- IDE will warn you on mistakes
+- Code gets easier to maintain, test and refactor
+
+---
+
+# Data types
+
+![Data types](./images/python-data-types.png)
+
+---
+
+# Data types: Tuples 
+
+- Collection of immutable Python objects enclosed within parenthesis. 
+- Elements may be of the same or of different data types.
+
+### Examples
+
+```python
+tuple =  ('aap', 'noot', 'mies')
+tuple
+```
+
+First element:
+```python
+tuple[0]
+```
+
+Last element:
+```python
+tuple[-1]
+```
+
+---
+
+# Data types: Lists
+
+- An ordered collection of elements.
+- Can contain elements of different data types, unlike arrays.
+
+### Examples
+
+```python
+my_list = ['Item1', 'Item2', '11', '12']
+len(my_List)
+```
+
+Adding an element while removing the other:
+```python
+my_list[1]='Item3'
+my_list
+```
+
+Reverse list:
+```python
+my_list[::-1]
+```
+
+---
+
+# Data types: Sets
+
+- Collection of unordered and unindexed items.
+- Every element in a set is unique and it does contain duplicate values.
+- Can be used to perform mathematical calculations such as union, intersection, and differences.
+
+### Operations
+- Add
+- Union
+- Intersecton
+- Difference
+
+---
+
+# Data types: Sets
+
+### Examples
+```python
+A = {'Aap', 'Noot', 'Mies'}
+B = {'Wim', 'Zus', 2 }
+C = {1, 2, 3}
+
+print('A U B =', A.union(B))
+print('A U B U C =', A.union(B, C))
+print('B inters C =', B.intersection(C))
+print('B differ C =', B.difference(C))
+```
+---
+
+# Exercise
+
+Print first n digits of Fibonacci sequence using a list
+
+--
+
+```python
+def fibonacci(n):              
+    sequence = []              
+    a, b = 0, 1              
+    while len(sequence) &lt; n:                  
+        a, b = b, a + b                  
+        sequence.append(a)
+    return sequence
+print("Result: ", fibonacci(10))
+```
+
+---
+
+# Data types: Dictionaries
+
+- Hash maps in other languages
+- JSON syntax
+
+### Examples
+
+Add/replace elements:
+```python
+my_dict = { 'firstname': 'Jan', 'lastname': 'Puk' }
+my_dict['firstname'] = 'Pietje'
+my_dict['middlename'] = 'Peter'
+my_dict
+```
+
+Remove element:
+```python
+del my_dict['middlename']
+my_dict
+```
+
+---
+
+# Data types: Dictionaries
+
+### Examples
+Merging two dicts in Python 3.5+
+```python
+x = { 'a': 1, 'b': 2}
+y = { 'b': 3, 'c': 4}
+
+z = {**x, **y}
+z
+```
+
+---
+
+# Iterators
+
+-  There are many types of objects which can be used with a for loop
+-  These are called iterable objects.
+
+Loop over list:
+```python
+&gt;&gt;&gt; x = iter([1, 2, 3])
+&gt;&gt;&gt; x
+&lt;listiterator object at 0x1004ca850&gt;
+&gt;&gt;&gt; next(x)
+1
+&gt;&gt;&gt; next(x)
+2
+&gt;&gt;&gt; next(x)
+3
+&gt;&gt;&gt; next(x)
+```
+
+Many built-in functions accept iterators as arguments.
+
+```python
+&gt;&gt;&gt; list(yrange(5))
+[0, 1, 2, 3, 4]
+&gt;&gt;&gt; sum(yrange(5))
+10
+```
+
+---
+
+# Generators
+
+- Generators simplifies creation of iterators. 
+- A generator is a function that produces a sequence of results instead of a single value.
+
+```python
+sum(x*x for x in range(10))
+```
+
+```python
+def integers():
+    """Infinite sequence of integers."""
+    i = 1
+    while True:
+        yield i
+        i = i + 1
+
+def squares():
+    for i in integers():
+        yield i * i
+
+def take(n, seq):
+    """Returns first n values from the given sequence."""
+    seq = iter(seq)
+    result = []
+    try:
+        for i in range(n):
+            result.append(next(seq))
+    except StopIteration:
+        pass
+    return result
+
+print(take(5, squares())) # prints [1, 4, 9, 16, 25]
+```
+---
+
+# Exception handling - 1
+
+![Exceptions](./images/try-except-1.jpg)
+--
+
+```python
+try:            
+    print("let's try something:")            
+    x = 1 / 0 # ZeroDivisionError        
+except ZeroDivisionError:            
+    print("something bad happened!")
+```
+
+---
+
+# Exception handling - 2
+
+![Exceptions](./images/try-except-2.jpg)
+
+---
+
+# Exception handling - 3
+
+![Exceptions](./images/try-except-3.jpg)
+
+---
+
+# Raising exceptions
+
+```python
+raise RuntimeError("A fatal exception has occurred")
+```
+
+### Exercise
+
+Extend Fibonacci to deal with negative numbers
+--
+
+```python
+def fibonacci(n):              
+    if (n &lt; 0):                  
+        raise ValueError("N must be non-negative")          
+    sequence = []              
+    a, b = 0, 1              
+    while len(sequence) &lt; n:                  
+        a, b = b, a + b                  
+        sequence.append(a)
+    return sequence
+print("Result", fibonacci(10))
+```
+
+---
+
+# Python features 
+
+- [Multi paradigm](https://blog.newrelic.com/engineering/python-programming-styles/)
+--
+
+  - Imperative / procedural
+  - Object-oriented
+  - Functional
+
+---
+
+# OO programming in Python
+
+```python
+class LineCounter:
+    def __init__(self, filename):
+        self.file = open(filename, 'r')
+        self.lines = []
+
+        def read(self):
+            self.lines = [line for line in self.file]
+
+        def count(self):
+            return len(self.lines)
+
+# State of object before reading
+lc = LineCounter('example_file.txt')
+print(lc.lines)
+
+lc.read()
+
+# State of object after reading
+print(lc.lines)
+print(lc.count())
+```
+
+---
+
+# [Underscores in Python](https://dbader.org/blog/meaning-of-underscores-in-python)
+
+| Pattern     				| Example    	|    | Meaning                       	|
+|----------				|------------	|--- |---------------------------------	|
+| **Single Leading Underscore**		| `_var`     	|    | Naming convention indicating a name is meant for internal use. Generally not enforced by the Python interpreter (except in wildcard imports) and meant as a hint to the programmer only. |
+| **Single Trailing Underscore**	| `var_`    	|    | Used by convention to avoid naming conflicts with ython keywords. |
+| **Double Leading Underscore***   	| `__var` 	|    | Triggers name mangling when used in a class context. Enforced by the Python interpreter. |
+| **Double Leading and Trailing Underscore**| `__var__` 	|    | Indicates special methods defined by the Python language. Avoid this naming scheme for your won attributes. |
+| **Single Underscore**		 	| `_`  	|    | Sometimes used as a name for temporary or insignificant variables ("don't care"). Also: The result of the last expression in a Python REPL. |
+
+---
+
+# Functional programming in Python
+
+- [Introduction functional programming in Python](https://kite.com/blog/python/functional-programming/)
+- Use "map" as functional alternative:
+
+  ```python
+  squares = []
+  my_list = (1, 2, 3, 4, 5)
+  for i in my_list:
+      squares.append(i * i)
+  ```
+
+--
+
+- Functional alternative:
+
+  ```python
+  squares = map(lambda x: x * x, my_list)
+  ```
+
+- Lazy evaluation (convert to list!):
+
+  ```python
+  print(list(squares)
+  ```
+---
+
+# Functional programming in Python
+
+- Use of "reduce" from the "functools": 
+
+```python
+import functools
+
+squares = []
+my_list = (1, 2, 3, 4, 5)
+squares = map(lambda x: x * x, my_list)
+sum     = functools.reduce(lambda x, s: s + x, squares)
+print(sum)
+```
+
+- Functional version of OO example: 
+
+```python
+def read(filename):
+    with open(filename, 'r') as f:
+        return [line for line in f]
+
+def count(lines):
+    return len(lines)
+
+example_lines = read('example_log.txt')
+lines_count = count(example_lines)
+```
+
+---
+ 
+# Python unit testing
+
+There are [many Python test runners](https://blog.kortar.org/?p=370):
+
+- Pythons own [unittest](https://docs.python.org/3/library/unittest.html) framework
+- [PyTest](https://docs.pytest.org/en/latest/)
+- Many more...
+
+---
+
+# Python unit testing - 2
+
+- Example test
+
+  ```python
+  import unittest
+  
+  def add(x,y):
+      return x + y
+  
+  class MyTest(unittest.TestCase):
+      def test(self):
+          self.assertEqual(add(3,4), 8)
+  
+  if __name__=='__main__':
+      try:
+          unittest.main()
+      except SystemExit as inst:
+          if inst.args[0] is True: # raised by sys.exit(True) when tests failed
+              raise
+  ```
+--
+
+- Excercise: test the Fibonacci sequence
+
+---
+
+# Examples
+
+---
+
+# REST API using Flask - 1
+
+- Open [repl.it for Python](https://repl.it/@enaard/Python-3)
+--
+
+- Import Flask 
+  - Create `requirements.txt` with `Flask-RESTful==0.3.6`
+--
+
+- Copy into `main.py`
+  ```python
+  from flask import Flask
+  from threading import Thread
+
+  app = Flask('')
+  
+  @app.route('/')
+  def home():
+      return  "Sample Flask REST API"
+
+  def run():
+      app.run(host='0.0.0.0',port=8080)
+
+  t = Thread(target=run)
+  t.start()
+  ```
+--
+
+- Run and see your first working REST API!
+
+---
+
+# REST API using Flask - 2
+
+- Let's add a ping endpoint
+   ```python
+   @app.route('/api/ping')
+   def ping():
+       return  "Ping ok"
+   ```
+--
+
+- Let's add some logging
+  - Add `logging==0.4.9.6` to `requirements.txt`
+--
+
+  - Add
+    
+    ```python
+    import logging
+
+    logging.basicConfig(format='[%(asctime)s] [%(threadName)s] [%(levelname)s] %(message)s', level=logging.INFO)
+    ```
+--
+
+  - Add
+    
+    ```python
+    logging.info("Ping endpoint invoked")
+    ```
+---
+
+# REST API using Flask - 3
+
+- Let's add a Fibonacci endpoint
+  - Endpoint for fixed value, e.g. 10
+--
+
+  - Add a parameter
+
+    ```python
+    @app.route('/api/fibonacci/<int:num>', methods=['GET'])
+    ```
+
+---
+
+# Python modules and packages
+
+- Modules are simply Python files with a .py extension.
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+var slideshow = remark.create({
+  // Customize slide number label, either using a format string..
+  slideNumberFormat: 'Slide %current% of %total%',
+  // .. or by using a format function
+  slideNumberFormat: function (current, total) {
+    return 'Slide ' + current + ' of ' + total;
+  },
+
+  countIncrementalSlides: false,
+  highlightLanguage: 'python',
+  highlightStyle: 'monokai',
+}); 
+    </script>
+  </body>
+</html>
