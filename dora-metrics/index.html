@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>DORA Performance Metrics</title>
+    <style>
+/* font settings */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Noto);
+body, h1, h2, h3 {font-family: 'Roboto';}
+h1, h2, h3 {font-weight: normal; font-weight: 400; margin-bottom: 0;}
+.remark-code, .remark-inline-code { font-family: 'Roboto Mono'; }
+
+/* theme class for slide pages */
+.inverse {
+  background: hsl(0, 0%, 15%);
+  color: hsl(0, 5%, 75%);
+}
+.inverse h1 {
+  text-align: center;
+  color: hsl(0, 5%, 95%);
+  line-height: 0.8em;
+}
+.inverse h2 {
+  color: hsl(0, 5%, 90%);
+  line-height: 0.8em;
+}
+.inverse a {
+  color: hsl(330, 75%, 50%);
+  text-decoration: none;
+}
+.inverse code {
+  color: hsl(330, 75%, 100%);
+}
+
+/* custom styles for inline span notation */
+span.red {color: hsl(0, 90%, 50%);}
+
+/* print filling whole paper */
+@media print {
+  .remark-slide-scaler {
+    left: 5vw !important;
+    width: 90vw !important;
+    top: 5vh !important;
+    height: 90vh !important;
+    transform: scale(1) !important;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: inverse
+layout: true
+---
+class: center, middle
+
+## Software Delivery Process
+## Measuring Performance
+
+### DORA metrics
+
+.foornote[
+by [Zeger Hendrikse](https://www.it-essence.nl/)
+
+credits: Remko Seelig
+]
+
+---
+
+# Agenda
+
+- Motivation
+--
+
+- Problematic metrics
+--
+
+- Proper metrics
+--
+
+- DORA
+  - Relation to software delivery performance
+  - DORA metrics
+
+---
+
+# Motivation
+
+Situation sketches
+
+1. Coach: assisting team(s)
+
+  - How effective is he actually!?
+
+--
+
+2. DevOps Engineer: end-to-end responsible 
+  - How can he keep himself and customer happy without burn-out!?
+
+--
+
+3. Product owner wants to
+  - Good cooperation with happy team
+  - Swiftly roll out updates while maintaining stability 
+
+---
+
+# Problematic metrics
+
+### Local optimizations
+
+What happens if you measure
+* The mere implementation of new features &#8594; ...
+--
+  ops engineers get flooded.
+
+--
+
+* The mere stability of the system &#8594; ...
+--
+  ops creating rigid change processes.
+
+--
+
+Local optimizations lead to conflicting concerns!
+
+---
+
+# Problematic metrics
+
+### The [Hawthorne effect](https://en.wikipedia.org/wiki/Hawthorne_effect)
+
+What happens if you measure
+* The lines of code &#8594; ...
+--
+  developers writing many short/useless lines.
+
+--
+
+* The number of defects fixed &#8594; ...
+--
+  testers logging trivial/simpel-to-fix bugs.
+
+--
+
+* Code coverage &#8594; ...
+--
+  testing of getters and setters
+
+--
+
+Mere output _does not_ contribute to a useful outcome!
+
+---
+
+# Proper metrics
+
+
+### Proper metrics focus on
+
+* A _global_ outcome, where global means _the whole IT value chain_.
+
+  - As also stated in the first way from [The Three Ways](https://itrevolution.com/the-three-ways-principles-underpinning-devops/).
+
+--
+
+* Outcomes rather than output. 
+  - [Agile Manifesto](https://agilemanifesto.org/): 
+    "to satisfy the customer through early and continuous delivery of valuable software".
+
+---
+
+# [**D**ev**O**ps **R**esearch and **A**ssessment (DORA)](https://www.devops-research.com/dora-joins-google-cloud.html)
+
+.center[![DORA](./images/dora.png)]
+
+- DORA [joined Google Cloud](https://www.devops-research.com/dora-joins-google-cloud.html)
+- Publishes each year a [State of DevOps report](https://cloud.google.com/blog/products/devops-sre/the-2019-accelerate-state-of-devops-elite-performance-productivity-and-scaling)
+
+---
+
+# [DORA State of DevOps 2019](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf)
+
+![DORA 2019](./images/dora_2019.png)
+
+---
+
+.center[![Metrics](./images/dora-metrics.png)]
+
+---
+
+# Category: Throughput
+
+### Metrics related to throughput
+
+.center[![Categories](./images/dora_throughput.png)]
+
+- **Lead time** relates to
+  [the first way](https://itrevolution.com/the-three-ways-principles-underpinning-devops/).
+- **Deployment frequency** is the reciprocal of batch size.
+
+---
+
+# Category: Stability
+
+### Metrics related to stability
+
+.center[
+![Categories](./images/dora_stability.png)
+]
+
+- **Mean Time to Recover Service** for stability as failure is inevitable
+- **Change fail percentage** is the percent complete and accurate from [Lean](https://theleanway.net/The-Five-Principles-of-Lean).
+
+---
+
+# The flow
+
+![Categories](./images/key-metrics.png)
+
+.footnote[
+DORA added availability for elite performers already doing well on the other metrics!
+]
+
+
+</textarea>
+
+    <!-- remark.js -->
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+
+    <!-- option: katex -->
+    <script src="https://unpkg.com/katex/dist/katex.min.js"></script>
+    <script src="https://unpkg.com/katex/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/katex/dist/katex.min.css" />
+
+    <!-- option: mermaid -->
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <style>
+.inverse div.mermaid {
+  background-color: hsl(0, 5%, 75%);
+}
+    </style>
+    
+    <!-- init slide -->
+    <script>
+const slideshow = remark.create({
+  countIncrementalSlides: false,
+  highlightLanguage: 'java',
+  highlightStyle: 'monokai',
+  highlightStyle: "github", // highlight.js theme
+}, () => {
+  // KaTeX sessting
+  renderMathInElement(document.body, {delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "$", right: "$", display: false},
+  ]});
+});
+
+// valid rendering mermaid graphs on chrome
+// note for print: once open page before print
+mermaid.initialize({startOnLoad: false, cloneCssStyles: false});
+slideshow.on("afterShowSlide", s => {
+  for (const d of document.querySelectorAll("div.mermaid")) {
+    if (d.offsetWidth > 0) mermaid.init(undefined, d);
+  }
+});
+    </script>
+  </body>
+</html>
+

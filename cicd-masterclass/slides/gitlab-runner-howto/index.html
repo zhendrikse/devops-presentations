@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitLab runner HOWTO</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# GitLab Runner HowTo
+
+---
+
+# Installiation on an EC2 instance
+
+- Follow [this article](https://hackernoon.com/configuring-gitlab-ci-on-aws-ec2-using-docker-7c359d513a46)
+  - Do _not_ use a spot instance
+  - You may safely use the latest Ubuntu
+  - Register the runner with "--locked=false" (like [so](https://stackoverflow.com/questions/55039439/how-to-unlock-a-runner))
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+var slideshow = remark.create({
+  // Customize slide number label, either using a format string..
+  slideNumberFormat: 'Slide %current% of %total%',
+  // .. or by using a format function
+  slideNumberFormat: function (current, total) {
+    return 'Slide ' + current + ' of ' + total;
+  },
+
+  countIncrementalSlides: false,
+  highlightLanguage: 'python',
+  highlightStyle: 'monokai',
+}); 
+    </script>
+  </body>
+</html>

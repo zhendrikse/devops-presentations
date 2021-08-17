@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CICD masterclass</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+## Continuous integration &amp; Continuous Delivery
+
+[![CICD](./images/devops-cicd.png)](https://www.synopsys.com/glossary/what-is-cicd.html)
+
+---
+
+# Agenda
+
+1. Expectations and getting acquainted (9:00 - 9:15)
+--
+
+2. General introduction CICD (9:20 - 10:00)
+--
+
+3. Introduction CI (10:10 - 10:30)
+--
+
+4. Demo + [hands-on](../exercises/index.html) (10:30 - 12:00)
+--
+
+5. Lunch
+--
+
+6. CICD in (a bit) more detail (13:00 - 13:30)
+--
+
+7. [Hands-on](../exercises/index.html) (13:30 - 15:30)
+--
+
+8. Retrospective (15:40 - 16:00)
+--
+
+9. Optional: free-format (16:00 - 17:00)
+
+---
+
+![Zeger](./images/zeger_profile.png)
+
+I am Zeger Hendrikse
+- Self-employed
+  - Developer at heart
+  - DevOps coach at ABN-AMRO
+- Hobbies
+  - Calisthenics
+  - Piano
+
+---
+
+## Slides
+
+- Slides created in [Remark](https://github.com/gnab/remark)
+- Alternatives I considered:
+  - [Reveal](https://revealjs.com/#/)
+  - [Prezi](https://prezi.com/about/)
+  - [Impress](https://impress.js.org/#/bored)
+
+
+## Slides for exercises
+
+- [Hands on part](https://www.it-essence.nl/devops-training/harvest-masterclass/slides/exercises/index.html)
+
+---
+
+# Motivation: high-performing organizations
+
+
+[![TBD](./images/organizational_performance.jpg)](https://www.thoughtworks.com/insights/blog/enabling-trunk-based-development-deployment-pipelines)
+
+---
+
+# Motivation: a high-performing organization
+
+- 10000+ developers in 40+ offices
+- 2000+ project under development
+- Single monolithic code tree (monorepo)
+- 20+ code changes submitted per minute - peaks at 60
+- 50% of code changes every month
+- Everyone develops and releases from head
+- All builds from source
+- &gt;100 million test cases executed per day
+
+---
+
+# Context: [three ways of DevOps](https://itrevolution.com/the-three-ways-principles-underpinning-devops/)
+
+1. First way:<br/>
+[![Git](./images/DevOps1.png)](https://freshservice.com/itsm/phoenix-project-three-ways-devops-blog/)
+--
+
+2. Second way:<br/>
+[![Git](./images/DevOps2.png)](https://freshservice.com/itsm/phoenix-project-three-ways-devops-blog/)
+--
+
+3. Third way:<br/>
+[![Git](./images/DevOps3.png)](https://freshservice.com/itsm/phoenix-project-three-ways-devops-blog/)
+
+---
+
+# CICD in a nutshell
+
+- Let's visit [this slide deck](../../CICDslides.pdf) first
+
+- Let's focus a bit more on the [DORA metrics](../../../dora-metrics/index.html)
+
+- Focus on [capabilities](https://itrevolution.com/24-key-capabilities-to-drive-improvement-in-software-delivery/), [_not_ maturity models](https://www.holistics.io/blog/capability-models-not-maturity-models/)
+
+
+---
+# Introduction CI
+
+[![CI](./images/ci_test.png)](https://thinkinglabs.io/articles/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
+
+---
+#CI practices
+
+[![CI](./images/ci_practices.png)](https://dzone.com/articles/continuous-integration-part-3-best-practices)
+
+---
+
+# CI practices
+
+- [Maintain a Single Source Repository](https://martinfowler.com/articles/continuousIntegration.html#MaintainASingleSourceRepository)
+--
+
+- [Automate the Build](https://martinfowler.com/articles/continuousIntegration.html#AutomateTheBuild)
+--
+
+- [Make Your Build Self-Testing](https://martinfowler.com/articles/continuousIntegration.html#MakeYourBuildSelf-testing)
+--
+
+- [Everyone Commits To the Mainline Every Day](https://martinfowler.com/articles/continuousIntegration.html#EveryoneCommitsToTheMainlineEveryDay)
+--
+
+- [Every Commit Should Build the Mainline on an Integration Machine](https://martinfowler.com/articles/continuousIntegration.html#EveryCommitShouldBuildTheMainlineOnAnIntegrationMachine)
+--
+
+- [Fix Broken Builds Immediately](https://martinfowler.com/articles/continuousIntegration.html#FixBrokenBuildsImmediately)
+--
+
+- [Keep the Build Fast](https://martinfowler.com/articles/continuousIntegration.html#KeepTheBuildFast)
+--
+
+- [Test in a Clone of the Production Environment](https://martinfowler.com/articles/continuousIntegration.html#TestInACloneOfTheProductionEnvironment)
+--
+
+- [Make it Easy for Anyone to Get the Latest Executable](https://martinfowler.com/articles/continuousIntegration.html#MakeItEasyForAnyoneToGetTheLatestExecutable)
+--
+
+- [Everyone can see what's happening](https://martinfowler.com/articles/continuousIntegration.html#EveryoneCanSeeWhatsHappening)
+--
+
+- [Automate Deployment](https://martinfowler.com/articles/continuousIntegration.html#AutomateDeployment)
+--
+
+
+
+- Additional material can be found in [the introduction CI](../../../ci-tbd/index.html#7)
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+var slideshow = remark.create({
+  // Customize slide number label, either using a format string..
+  slideNumberFormat: 'Slide %current% of %total%',
+  // .. or by using a format function
+  slideNumberFormat: function (current, total) {
+    return 'Slide ' + current + ' of ' + total;
+  },
+
+  countIncrementalSlides: false,
+  highlightLanguage: 'python',
+  highlightStyle: 'monokai',
+}); 
+    </script>
+  </body>
+</html>
