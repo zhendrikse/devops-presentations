@@ -10,7 +10,13 @@ freely modified by Zeger Hendrikse from
 
 ### Sneak preview
 
-[![Outlook](images/stack.png)](https://replit.com/@zwh/TDD-Workshop-Jasmine#index.html)
+<iframe width="100%" height="300" src="//jsfiddle.net/zhendrikse/gd60mfc7/4/embedded/js,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+---
+
+### Let's build in replit.com
+
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@zwh/Stack-with-TDD-Javascript-and-Jasmine?lite=false"></iframe>
 
 ---
 
