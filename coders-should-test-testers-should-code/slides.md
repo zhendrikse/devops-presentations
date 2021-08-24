@@ -31,7 +31,7 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 <li>
 The goal is to illustrate <i>the TDD process</i>
   <ul>
-  <li>The goal is _not_ to write the best
+  <li>The goal is <em>not</em> to write the best
     <ul>
     <li>Javascript ever</li>
     <li>Python ever</li>
