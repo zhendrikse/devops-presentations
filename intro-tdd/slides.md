@@ -1,6 +1,8 @@
-## Coders should test
+#### Coders should test
 
 ### Testers should code
+
+## We all should do TDD!
 
 by [Zeger Hendrikse](https://www.it-essence.nl/)
 
@@ -9,18 +11,17 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 <ul>
 <div>
-<li>Coding + testing are two sides of the same coin </li>
+<li>Coding + testing are the same activity</li>
 </div>
 <div class="fragment">
-<li>Live demo of (an introduction to) TDD</li>
+<li>See how TDD is done <em>in practice</em></li>
 </div> 
 <div class="fragment">
-<li>Why you should start practising TDD today!</li>
+<li>Motivation to learn & practice more TDD</li>
 </div> 
 </ul>
 
 ---
-
 ### Rulez during this session
 
 <ul>
@@ -63,12 +64,28 @@ The goal is to illustrate <i>the TDD process</i>
 
 ---
 
-### Kent Beck's [design rules](https://martinfowler.com/bliki/BeckDesignRules.html)
+### Rulez of the TDD game
+
+**Small increments**, so we are [not allowed to write](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd)
+<ol>
+  <div class="fragment">
+    <li>any code unless it is to make a failing test pass</li>
+  </div>
+  <div class="fragment">
+    <li>any more of a test than is sufficient to fail (also compilation!)</li>
+  </div>
+  <div class="fragment">
+    <li>any more code than is sufficient to pass the one failing unit test</li>
+  </div>
+</ol>
+
+---
+### <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck's</a> [design rules](https://martinfowler.com/bliki/BeckDesignRules.html)
 
 1. Passes the tests
 2. Reveals intention
 3. No duplication ([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself))
-4. Fewest elements (simplest thing that could possibly work)
+4. Fewest elements (<a href="http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork">simplest thing that could possibly work</a>)
 
 ---
 
@@ -99,9 +116,9 @@ The goal is to illustrate <i>the TDD process</i>
 <div style="text-align: left">
 <b>As</b> a worker in a restaurant 
 
-<b>I want</b> to place my plates on a stack 
+<b>I want</b> to place my clean plates on a stack 
 
-<b>so that</b> I always have clean plates available to serve dishes
+<b>so that</b> I always have plates available to serve dishes
 <div>
 
 ---
