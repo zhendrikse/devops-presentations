@@ -98,9 +98,9 @@ The goal is to illustrate <i>the TDD process</i>
 ### <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck's</a> [design rules](https://martinfowler.com/bliki/BeckDesignRules.html)
 
 1. Passes the tests
-2. Reveals intention
+2. Reveals intention ([Clean code](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29))
 3. No duplication ([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself))
-4. Fewest elements (<a href="http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork">simplest thing that could possibly work</a>)
+4. Fewest elements (<a href="http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork">Simplest thing that could possibly work</a>)
 
 ---
 
