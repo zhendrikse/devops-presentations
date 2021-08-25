@@ -66,7 +66,7 @@ The goal is to illustrate <i>the TDD process</i>
 
 ### Rulez of the TDD game
 
-**Small increments**, so we are [not allowed to write](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd)
+**Small increments**, so we are [not allowed to write](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html)
 <ol>
   <div class="fragment">
     <li>any code unless it is to make a failing test pass</li>
@@ -123,7 +123,9 @@ The goal is to illustrate <i>the TDD process</i>
 
 ---
 
-### Let's create a plan
+### Plans are worthless...
+
+... but planning is essential:
 
 - Start with an empty stack
 - Define pop on an empty stack
@@ -134,7 +136,7 @@ The goal is to illustrate <i>the TDD process</i>
 &nbsp;
 
 <div class="fragment">
-Credits to Kent Beck!
+Credits to <a href="http://barbra-coco.dyndns.org/yuri/Kent_Beck_TDD.pdf">Kent Beck</a> and <a href="https://quoteinvestigator.com/2017/11/18/planning/">Eisenhower</a>!
 </div>
 
 ---
@@ -154,7 +156,7 @@ Credits to Kent Beck!
 
 <ul>
 <div>
-<li>Tests become more <i>specific</i>, code more <i>generic</i></li>
+<li><a href="http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html">Tests become more <i>specific</i>, code more <i>generic</i></a></li>
 </div>
 <div class="fragment">
 <li><a href="../ci-tbd/index.html">TBD</a> is a no-brainer</li>
@@ -163,7 +165,7 @@ Credits to Kent Beck!
 <li>Difficulty is postponing "the gold"</li>
 </div>
 <div class="fragment">
-<li>Contravariant test suites</li>
+<li><a href="https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html">Contravariant test suites</a></li>
 </div>
 <div class="fragment">
 <li>1, 2, N</li>
@@ -194,3 +196,10 @@ Credits to Kent Beck!
 <li>Developer tests his own code: <a href="../four-eyes/index.html">the nightmare of every auditor!</a></li>
 </div>
 </ul>
+
+---
+### Resources
+
+- Kent Beck, [Test-Driven Development By Example](http://barbra-coco.dyndns.org/yuri/Kent_Beck_TDD.pdf) 
+- [QWAN’s Little Book of Test Driven Development](tdd-booklet.pdf)
+- ...
