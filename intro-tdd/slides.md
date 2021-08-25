@@ -138,9 +138,9 @@ The goal is to illustrate <i>the TDD process</i>
 
 ---
 
-### Plans are worthless...
+#### Plans are worthless ...
 
-... but planning is essential:
+### ... but planning is essential:
 
 - Start with an empty stack
 - Define pop on an empty stack
