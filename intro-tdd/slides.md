@@ -7,8 +7,13 @@
 by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 ---
-### Goals
 
+### With special thanks to ...
+
+![Uncle Bob](./images/unclebob.gif)
+
+---
+![Goals](./images/goals.png)
 <ul>
 <div>
 <li>Coding + testing are the same activity</li>
@@ -48,7 +53,15 @@ The goal is to illustrate <i>the TDD process</i>
 ### Rulez of the TDD game
 
 <table>
+  <colgroup>
+    <col span="1" style="width: 60%;"/>
+    <col span="1" style="width: 40%;"/>
+  </colgroup>
+			         
   <tbody><tr>
+    <td>
+      <img alt="Red Green Refactor" src="./images/redgreenrefactor.png"/>
+    </td>
     <td>
       <ol>
         <li>Write a failing test</li>
@@ -56,10 +69,7 @@ The goal is to illustrate <i>the TDD process</i>
         <li>Refactor relentlessly</li>
       </ol>
     </td>
-    <td>
-      <img src="./images/redgreenrefactor.png"/>
-    </td>
-  </tr>
+  </tr></tbody>
 </table>
 
 ---
@@ -78,6 +88,11 @@ The goal is to illustrate <i>the TDD process</i>
     <li>any more code than is sufficient to pass the one failing unit test</li>
   </div>
 </ol>
+---
+
+### Kent Beck
+
+![Kent Beck](./images/kentbeck.jpg)
 
 ---
 ### <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck's</a> [design rules](https://martinfowler.com/bliki/BeckDesignRules.html)
