@@ -136,11 +136,11 @@ now ᴘʟᴀʏɪɴɢ: MyGreatSong.mp3 ───────────⚪──
 
 ### ... but planning is essential:
 
-- Start with an empty stack
-- Define pop on an empty stack
-- Define push on an empty stack
-- Define pop on a non-empty stack
-- Define multiple pushes and pops
+- Audio player in initial state
+- Previous track button
+- Next track button
+- Next track button twice
+- Pressing next and previous
 
 &nbsp;
 
@@ -231,6 +231,16 @@ describe('Given a just switched on audioplayer', function () {
 })
 
 ```
+
+---
+
+### Our updated plan
+
+- ~~Audio player in initial state~~ &#10003;
+- Previous track button
+- Next track button
+- Next track button twice
+- Pressing next and previous
 ---
 
 ### Previous track button
@@ -252,6 +262,16 @@ describe('When the previous track button is pressed', function() {
   previousTrack() {}
 
 ```
+
+---
+
+### Our updated plan
+
+- ~~Audio player in initial state~~ &#10003;
+- ~~Previous track button~~ &#10003;
+- Next track button
+- Next track button twice
+- Pressing next and previous
 
 ---
 
@@ -292,7 +312,17 @@ class AudioPlayer {
 
 ---
 
-### Next track _again_
+### Our updated plan
+
+- ~~Audio player in initial state~~ &#10003;
+- ~~Previous track button~~ &#10003;
+- ~~Next track button~~ &#10003;
+- Next track button twice
+- Pressing next and previous
+
+---
+
+### Next track _once more_
 
 ```javascript
 describe('When the next track button is pressed twice', function () {
@@ -432,35 +462,69 @@ it('should show the first song in the playlist on display', function () {
 
 ---
 
+### Our updated plan
+
+- ~~Audio player in initial state~~ &#10003;
+- ~~Previous track button~~ &#10003;
+- ~~Next track button~~ &#10003;
+- ~~Next track button twice~~ &#10003;
+- Pressing next and previous
+
+---
+
 ### Pressing next and then previous
 
 ```javascript
 describe('When the previous buttons is pressed', function () {
   it('should show the first song in the playlist on display', function () {
+    playlist.getPreviousTrack.and.returnValue("MyGreatSong.mp3")
     audioplayer.previousTrack()
-    expect(audioplayer.getCurrentSong()).toEqual("play: MyWorkoutSong.mp3")
+    expect(audioplayer.getCurrentSong()).toEqual("play: MyGreatSong.mp3")
   })
 })
 ```
+(Update `playlist` spy obj method array too!)
 
 ----
 
+```javascript
+previousTrack() {
+  this.currentTrack = this.playlist.getPreviousTrack()
+}
+```
 
+---
+
+### Our updated plan
+
+- ~~Audio player in initial state~~ &#10003;
+- ~~Previous track button~~ &#10003;
+- ~~Next track button~~ &#10003;
+- ~~Next track button twice~~ &#10003;
+- ~~Pressing next and previous~~ &#10003;
+
+---
+
+### Possible next steps
+
+- Walk through complete playlist
+- Make the play button work
+- Make the progress bar do its work (difficult!)
+- ...
+
+---
 
 ### Retrospective
 
 <ul>
 <div>
-<li><a href="https://martinfowler.com/articles/mocksArentStubs.html">Mocks, stubs, fakes, spies, ...</a></li>
+<li>We applied mocks/spies to what we really own!
 </div>
 <div class="fragment">
-<li><a href="https://khalilstemmler.com/articles/software-design-architecture/organizing-app-logic/">The Clean Architecture</a>: how to cope with dependencies on external systems</li>
+<li>...</li>
 </div>
 <div class="fragment">
-<li><a href="https://blog.devgenius.io/detroit-and-london-schools-of-test-driven-development-3d2f8dca71e5">London school / Detroit schools</a></li>
-</div>
-<div class="fragment">
-<li>Developer tests his own code: <a href="../four-eyes/index.html">the nightmare of every auditor!</a></li>
+<li>...</li>
 </div>
 </ul>
 
