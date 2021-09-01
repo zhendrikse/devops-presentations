@@ -22,17 +22,13 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 ---
 
-### A short history of BDD
-
-Test behaviour, not state
----
-
 ### Don't mock what you don't own
 
 <div class="fragment">
   <h2>Use <a href="../clean-architecture/repository-adapter/slides.md">adapters</a> instead!</h2>
 </div>
 
+> Effective unit tests only test one thing. To do this you have to move the irrelevant portions out of the way (e.g., MockObjects). This forces out what might be a poor design choice.
 ---
 
 ### Test doubles
@@ -149,6 +145,57 @@ Credits to <a href="http://barbra-coco.dyndns.org/yuri/Kent_Beck_TDD.pdf">Kent B
 </div>
 
 ---
+
+### What the result will be
+
+<iframe width="100%" height="500" src="//jsfiddle.net/zhendrikse/bu7tv1kp/3/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+---
+
+### Jasmine prerequisites
+
+- Creating a [spy object](https://stackoverflow.com/questions/24321307/what-is-the-difference-between-createspy-and-createspyobj)
+```javascript
+beforeEach(function() {
+  tape = jasmine.createSpyObj('tape', ['play', 'pause', 'stop', 'rewind']);
+
+  tape.play();
+  tape.pause();
+  tape.rewind(0);
+});
+```
+
+---
+
+### Jasmine prerequisites
+
+- Mocking return value
+```javascript
+my_object.my_method.and.returnValue("my_return_value")
+```
+
+- Mocking subsequent return values
+```javascript
+my_object.my_method.and.returnValues("my_return_value1", "my_return_value2")
+```
+---
+
+### Jasmine prerequisites
+
+- Calls [with arguments](https://jasmine.github.io/api/edge/Spy#withArgs)
+```javascript
+spyOn(componentInstance, 'myFunction')
+      .withArgs(myArg1).and.returnValue(myReturnObj1)
+      .withArgs(myArg2).and.returnValue(myReturnObj2);
+```
+
+- Verify behaviour
+```javascript
+expect( foo.callMe ).toHaveBeenCalled();
+```
+
+---
+
 
 ### Let's do this
 
@@ -527,4 +574,14 @@ previousTrack() {
 <li>...</li>
 </div>
 </ul>
+
+---
+
+### References
+
+- [How to write better Jasmine tests with mocks](https://eclipsesource.com/blogs/2014/03/27/mocks-in-jasmine-tests/)
+- [Don't mock what you don't own](https://github.com/testdouble/contributing-tests/wiki/Don%27t-mock-what-you-don%27t-own)
+- [Examples for using mocks in Jasmine tests](https://gist.github.com/tbuschto/9766267)
+- [Mocking calls with Jasmine](https://volaresystems.com/technical-posts/mocking-calls-with-jasmine)
+
 
