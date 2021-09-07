@@ -414,9 +414,8 @@ class AudioPlayer {
 Introduce mock in small increments!
 
 ```javascript
-playlist = jasmine.createSpyObj('playlist', ['getCurrentTrack', 'getNextTrack'])
+playlist = jasmine.createSpyObj('playlist', ['getCurrentTrack', 'nextTrack'])
 playlist.getCurrentTrack.and.returnValue("MyGreatSong.mp3")
-playlist.getNextTrack.and.returnValues("MyUpbeatSong.mp3", "MyWorkoutSong.mp3")
 
 audioplayer = new AudioPlayer(playlist)
 ```

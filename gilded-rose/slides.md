@@ -1,8 +1,8 @@
-#### Legacy code
+#### Refactoring Legacy Code
 
 ### Approval testing
 
-## We all should refactor!
+## We all should (learn to) refactor!
 
 by [Zeger Hendrikse](https://www.it-essence.nl/)
 

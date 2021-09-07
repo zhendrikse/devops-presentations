@@ -19,6 +19,9 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 <li>Coding + testing are the same activity</li>
 </div>
 <div class="fragment">
+<li>The importance of <a href="https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html">Test Contra-variance</a></li>
+</div> 
+<div class="fragment">
 <li>See how TDD is done <em>in practice</em></li>
 </div> 
 <div class="fragment">
@@ -47,6 +50,34 @@ The goal is to illustrate <i>the TDD process</i>
    <li>User story is not the most realistic either</li>
 </li>
 </div>
+
+---
+
+### Contra-variance and co-variance
+
+![Contra- and co-variance](./images/contra_co_variant5.png)
+
+---
+
+### <a href="https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html">Test Contra-variance</a>
+
+[![unit tests](./images/covariant_unit_tests.png)](https://martinfowler.com/bliki/UnitTest.html)
+
+---
+
+### Bob Martin: [Test Contra-variance](https://www.infoq.com/news/2017/10/bob-martin-contra-variance/)
+
+> The structure of the tests must not reflect the structure of the production code because that much coupling makes the system fragile and obstructs refactoring. Rather, the structure of the tests must be independently designed so as to minimize the coupling to the production code.
+
+---
+
+## Contra-variance can only be used using TDD
+
+---
+
+### [Dave Farley](https://www.youtube.com/watch?v=Bq_oz7nCNUA) &#8212; the culture of TDD:
+
+![TDD](./images/dave_farley_tdd.png)
 
 ---
 
