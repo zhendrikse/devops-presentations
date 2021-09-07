@@ -71,13 +71,60 @@ The goal is to illustrate <i>the TDD process</i>
 
 ---
 
-## Contra-variance can only be used using TDD
+## Contra-variance can only be achieved using TDD
+
+<div class="fragment">
+Why? ==> Next slide
+</div>
 
 ---
 
 ### [Dave Farley](https://www.youtube.com/watch?v=Bq_oz7nCNUA) &#8212; the culture of TDD:
 
 ![TDD](./images/dave_farley_tdd.png)
+
+---
+
+### We test _behaviour_ with TDD
+
+<iframe width="100%" height="500" src="//jsfiddle.net/zhendrikse/bu7tv1kp/3/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></frame>
+
+---
+
+### Daniel North and Chris Matts
+
+- Test Suite => specification
+- Test => scenario
+- Structure tests around "[Given, When, Then](https://martinfowler.com/bliki/GivenWhenThen.html)"
+
+---
+
+### Summary
+
+<ul>
+  <div>
+    <li>Unit test === Functional test (!!)</li>
+  </div>
+  <div class="fragment">
+    <li>Unit tests test the smallest <em>functional</em> unit</li>
+  </div>
+  <div class="fragment">
+    <li>Practicing TDD/BDD &nbsp;==&gt;&nbsp; test contra-variance</li>
+  </div>
+  <div class="fragment">
+    <li>xUnit tests &#8800; TDD</li>
+  </div>
+  <div class="fragment">
+    <li>BDD &#8800; tools (<a href="https://cucumber.io/docs/bdd/">Cucumber</a> / <a href="https://specflow.org/">Specflow</a>)</li>
+  </div>
+  <div class="fragment">
+    <li>BDD = <a href="http://rspec.info/">RSpec</a>-style specifications</br>
+     (<a href="http://jasmine.github.io/">Jasmine</a>/<a href="https://mochajs.org/">Mocha</a>/<a href="https://facebook.github.io/jest">Jest</a>/<a href="https://opensourcelibs.com/lib/specnaz">Specnaz</a>/<a href="https://github.com/nestorsalceda/mamba">Mamba</a>...)
+    </div>
+  <div>
+    <li>Unit test === Functional test (!!)</li>
+  </div>
+</ul>
 
 ---
 
