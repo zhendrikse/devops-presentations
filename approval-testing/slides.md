@@ -101,6 +101,10 @@ class Calculator():
 ### How we verify
 
 ```python
+import unittest
+from approvaltests.approvals import verify
+from calculator import Calculator
+
 class CalculatorTest(unittest.TestCase):
 
   def test_main(self):
@@ -111,6 +115,20 @@ class CalculatorTest(unittest.TestCase):
     result = Calculator.addNumbers(x, y)
     # APPROVE
     verify(result)
+```
+
+---
+
+### Even with combinatorial tests 🤩
+
+```python
+...
+from approvaltests.combination_approvals import verify_all_combinations
+
+class CalculatorTest(unittest.TestCase):
+
+  def test_add_combinatorial(self):
+    verify_all_combinations( Calculator.addNumbers, [[1,2], [4,3]])
 ```
 
 ---
