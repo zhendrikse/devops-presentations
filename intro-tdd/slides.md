@@ -152,6 +152,13 @@ Why? ==> Next slide
 
 ---
 
+### [Martin Fowler](https://refactoring.com/): refactoring
+
+![Martin Fowler](./images/fowler.jpg)
+
+... is a disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior 
+---
+
 ### Rulez of the TDD game
 
 **Small increments**, so we are [not allowed to write](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html)
