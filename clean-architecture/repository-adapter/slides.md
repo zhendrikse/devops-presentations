@@ -21,6 +21,13 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 ---
 
+### [Adapter pattern](https://refactoring.guru/design-patterns/adapter)
+
+- Polymorphic interface
+- Dependency inversion pattern
+
+---
+
 ### Rulez during this session
 
 <ul>
@@ -44,4 +51,15 @@ The goal is to illustrate <i>the adapter pattern</i> for testing
 
 ---
 
-## Hexagonal architecture
+##### Hexagonal architecture
+
+![Hexagonal architecture](./images/hex_arch.png)
+
+---
+
+##### Hexagonal architecture
+
+![Hexagonal architecture](./images/hex_arch_unit.png)
+
+---
+

@@ -173,7 +173,7 @@ else:
 
 ---
 
-### Rearrange if-then-else
+### Rearrange item type conditional
 
 ```python
 if item.name == "Aged Brie":
@@ -200,6 +200,12 @@ else:
   ...
 
 ```
+
+---
+
+### [Replace conditional with polymorphism](https://refactoring.guru/replace-conditional-with-polymorphism)
+
+1. Create item subclasses
 
 ---
 
