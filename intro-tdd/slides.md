@@ -1,10 +1,23 @@
-#### Coders should test
+<section data-background-image="./images/intricate-explorer-HZ7VEe7Ni1s-unsplash.jpg">
 
-### Testers should code
+### Coders should test &mdash; testers should code
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 ## We all should do TDD!
 
 by [Zeger Hendrikse](https://www.it-essence.nl/)
+</section>
 
 ---
 
@@ -14,20 +27,18 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 ---
 ![Goals](./images/goals.png)
-<ul>
-<div>
-<li>Coding + testing are the same activity</li>
-</div>
-<div class="fragment">
-<li>The importance of <a href="https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html">Test Contra-variance</a></li>
-</div> 
-<div class="fragment">
-<li>See how TDD is done <em>in practice</em></li>
-</div> 
-<div class="fragment">
-<li>Motivation to learn & practice more TDD</li>
-</div> 
-</ul>
+
+- Coding + testing are the same activity
+<!-- .element: class="fragment"-->
+
+- The importance of [test contra-variance](https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html)
+<!-- .element: class="fragment"-->
+
+- See how TDD is done _in practice_
+<!-- .element: class="fragment"-->
+
+- Motivation to learn & practice more TDD
+<!-- .element: class="fragment"-->
 
 ---
 ### Rulez during this session
@@ -161,18 +172,15 @@ Why? ==> Next slide
 
 ### Rulez of the TDD game
 
-**Small increments**, so we are [not allowed to write](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html)
-<ol>
-  <div class="fragment">
-    <li>any code unless it is to make a failing test pass</li>
-  </div>
-  <div class="fragment">
-    <li>any more of a test than is sufficient to fail (also compilation!)</li>
-  </div>
-  <div class="fragment">
-    <li>any more code than is sufficient to pass the one failing unit test</li>
-  </div>
-</ol>
+**Small increments**, so we are [not allowed to write](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html):
+
+1. any code unless it is to make a failing test pass
+<!-- .element: class="fragment"-->
+2. any more of a test than is sufficient to fail (also compilation!)
+<!-- .element: class="fragment"-->
+3. any more code than is sufficient to pass the one failing unit test
+<!-- .element: class="fragment"-->
+
 ---
 
 ### Kent Beck

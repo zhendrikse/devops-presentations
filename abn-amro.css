@@ -1,0 +1,10 @@
+.reveal > .backgrounds > div {
+   background-image: url('abn-amro-logo.png');
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: 18%;
+ }
+
+ .reveal > .backgrounds > div:first-child {
+   background-image: url('abn-amro-logo.png');
+ }

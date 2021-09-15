@@ -1,10 +1,20 @@
-#### Refactoring Legacy Code
+<section data-background-image="./images/clay-banks-a9kHtTbjpwY-unsplash.jpg" style="color:black;">
 
-### Approval testing
+<h3 style="color: black;">Refactoring Legacy Code</h3>
 
-## We all should refactor!
+<h2 style="color: black;">Using approval testing</h2>
 
 by [Zeger Hendrikse](https://www.it-essence.nl/)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+</section>
 
 ---
 ![Goals](./images/goals.png)
@@ -19,6 +29,12 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 <li>When to use it and when not</li>
 </div> 
 </ul>
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 
 ---

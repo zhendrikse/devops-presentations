@@ -1,6 +1,21 @@
+<section data-background-image="./images/photo-1532010940201-c31e6beacd39.jpg">
+
 ## The Gilded Rose kata
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 by [Zeger Hendrikse](https://www.it-essence.nl/)
+
+&nbsp;
+
+&nbsp;
+
+</section>
 
 ---
 ![Goals](./images/goals.png)
