@@ -1,6 +1,6 @@
 <section data-background-image="./images/intricate-explorer-HZ7VEe7Ni1s-unsplash.jpg">
 
-### Coders should test &mdash; testers should code
+#### Coders should test &mdash; testers should code
 
 &nbsp;
 
@@ -14,7 +14,9 @@
 
 &nbsp;
 
-## We all should do TDD!
+&nbsp;
+
+#### We all should do TDD!
 
 by [Zeger Hendrikse](https://www.it-essence.nl/)
 </section>
@@ -90,7 +92,7 @@ Why? ==> Next slide
 
 ---
 
-### [Dave Farley](https://www.youtube.com/watch?v=Bq_oz7nCNUA) &#8212; the culture of TDD:
+### [Dave Farley](https://www.youtube.com/watch?v=Bq_oz7nCNUA) &#8212; the culture of TDD
 
 ![TDD](./images/dave_farley_tdd.png)
 
