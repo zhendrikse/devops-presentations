@@ -28,6 +28,16 @@
 
 ---
 
+#### Facilitated by transformational leadership
+
+&nbsp;
+
+![Leaders](./images/leadership.png)
+
+&nbsp;
+
+---
+
 <section data-background-image="./images/todd-desantis-RBa31iRYbfg-unsplash.jpg">
 
 ### I have a dream...
