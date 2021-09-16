@@ -57,7 +57,10 @@
 
 #### If we could confidently touch legacy code?
 
-<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@zwh/ApprovalTestDemo-1?lite=false"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@zwh/GildedRosePython?lite=false"></iframe>
+
+Note the f...ing code coverage!
+<!-- .element: class="fragment"-->
 
 ---
 
@@ -76,6 +79,12 @@
 #### By applying dependency inversion
 
 <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@zwh/DatabaseAdapterPattern?lite=false"></iframe>
+
+---
+
+#### If we could continuously integrate?
+
+[![Branching](./images/dontBranch.jpg)](https://www.davefarley.net/?p=247)
 
 ---
 

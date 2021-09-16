@@ -156,7 +156,7 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ### So right off the bat ...
 
-[![Git](./images/dontBranch.jpg)](https://www.davefarley.net/?p=247)
+[![Branching](./images/dontBranch.jpg)](https://www.davefarley.net/?p=247)
 
 ---
 
