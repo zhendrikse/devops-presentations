@@ -28,13 +28,21 @@
 
 ---
 
-#### Facilitated by transformational leadership
-
-&nbsp;
+#### Facilitated by 
 
 ![Leaders](./images/leadership.png)
 
+#### transformational leadership
+
 &nbsp;
+
+&nbsp;
+
+---
+
+#### Freed from the limitations imposed by
+
+![Conway](./images/conways-law.jpg)
 
 ---
 
