@@ -1,91 +1,76 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Do'nt branch</title>
-    <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+<section data-background-image="./images/edward-howell-yl6xgqD3X14-unsplash.jpg">
 
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-    </style>
-  </head>
-  <body>
-    <textarea id="source">
+## Trunk Based Development
 
-class: center, middle
+&nbsp;
 
-#The Death 
+&nbsp;
 
-![death](./images/hiclipart.com.png)
+&nbsp;
 
-#of Continuous Integration
+&nbsp;
+
+&nbsp;
+
+</section>
 
 ---
 
-# But first ...
+### But first ...
 
 [..] Who the f... are you?
 
 ![Zeger](./images/zeger_profile.png)
 
-I am Zeger Hendrikse, nice to meet you too ;-)
+I am Zeger Hendrikse, nice to meet you too 😉
 
 ---
 
-# Context: three ways of DevOps
+### Context: three ways of DevOps
 
-1. First way:<br/>
-![Git](./images/DevOps1.png)
---
+![First way](./images/DevOps1.png)
+<!-- .element: class="fragment"-->
 
-2. Second way:<br/>
-![Git](./images/DevOps2.png)
---
+![Second way](./images/DevOps2.png)
+<!-- .element: class="fragment"-->
 
-3. Third way:<br/>
-![Git](./images/DevOps3.png)
+![Third way](./images/DevOps3.png)
+<!-- .element: class="fragment"-->
 
 ---
 
-# CI in the context of CD
+### CI in the context of CD
 
 ![CICD overview](./images/cicd-overview-1.png)
 
 ---
 
-# CI in the context of CD
+### CI in the context of CD
 
 ![CICD overview](./images/cicd-overview-2.png)
 
 ---
 
-# CI in the context of CD
+### CI in the context of CD
 
 ![CICD overview](./images/cicd-overview-3.png)
 
 ---
 
-# CI in the context of CD
+### CI in the context of CD
 
 ![CICD overview](./images/cicd-overview-4.png)
 
 ---
 
-# CI in the context of CD
+## CI in the context of CD
 
 ![CICD overview](./images/cicd-overview-5.png)
 
 
 ---
 
-# First question: CI practice
+#### First question: CI practice
 
 ### Which of the following is **not** a CI best practice?
 
@@ -96,7 +81,7 @@ I am Zeger Hendrikse, nice to meet you too ;-)
 
 ---
 
-# First question: CI practice
+#### First question: CI practice
 
 ### Which of the following is **not** a CI best practice?
 
@@ -107,7 +92,7 @@ I am Zeger Hendrikse, nice to meet you too ;-)
 
 ---
 
-# Second question: version control
+#### Second question: version control
 
 ### What is the primary purpose of a VCS?
 
@@ -118,7 +103,7 @@ I am Zeger Hendrikse, nice to meet you too ;-)
 
 ---
 
-# Second question: version control
+#### Second question: version control
 
 ### What is the primary purpose of a VCS?
 
@@ -129,25 +114,25 @@ I am Zeger Hendrikse, nice to meet you too ;-)
 
 ---
 
-# Do you practice Continuous Integration?
+#### Do you practice Continuous Integration?
 
 [![Continuous Integration](./images/what_is_ci_1.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
 
 ---
 
-# Do you practice Continuous Integration?
+#### Do you practice Continuous Integration?
 
 [![Continuous Integration](./images/what_is_ci_2.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
 
 ---
 
-# Do you practice Continuous Integration?
+#### Do you practice Continuous Integration?
 
 [![Continuous Integration](./images/what_is_ci_3.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
 
 ---
 
-# Third question: amplify feedback loops
+#### Third question: amplify feedback loops
 
 ### Which is the odd one out?
 
@@ -158,7 +143,7 @@ I am Zeger Hendrikse, nice to meet you too ;-)
 
 ---
 
-# Third question: amplify feedback loops
+#### Third question: amplify feedback loops
 
 ### Which is the odd one out?
 
@@ -169,59 +154,64 @@ I am Zeger Hendrikse, nice to meet you too ;-)
 
 ---
 
-# So right off the bat ...
+### So right off the bat ...
 
 [![Git](./images/dontBranch.jpg)](https://www.davefarley.net/?p=247)
 
 ---
 
-#The Big Controversy
+### The Big Controversy
 
-> ![Dave](./images/davefarley.jpg)
+![Dave](./images/davefarley.jpg)
 
-> _[...] I get “Heretic, burn him at the stake” kind of feedback [...]_
-
-> -[Dave Farley](https://www.davefarley.net/?p=247)
+> [...] I get “Heretic, burn him at the stake” kind of feedback [...] &mdash; [Dave Farley](https://www.davefarley.net/?p=247)
 
 ---
 
-#So why do people like this so much?
+### What do we usually see?
 
 ![branches](./images/branches_intro.png)
 
 ---
 
-#Negative effects of branches
+### The Death 
 
-- Delay integration 
---
+![death](./images/hiclipart.com.png)
 
-- Increased change batch size
---
-
-- Kill communication 
+### of Continuous Integration
 
 ---
 
-# Definition by Jez Humble
+### Negative effects of branches
 
-> ![Jez](./images/jezhumble.jpg)
+- Delay integration 
+<!-- .element: class="fragment"-->
+
+- Increased change batch size
+<!-- .element: class="fragment"-->
+
+- Kill communication 
+<!-- .element: class="fragment"-->
+
+---
+
+### Definition by Jez Humble
+
+![Jez](./images/jezhumble.jpg)
 
 > _The trunk-based development is all about communication. We use version_
   _control to communicate what we're doing to the rest of the team. To do it_
-  _regularly enough, we have to work in very small batches._
-
->  -[Jez Humble](https://github.com/rht-labs/enablement-docs/issues/123)
+  _regularly enough, we have to work in very small batches._ [Jez Humble](https://github.com/rht-labs/enablement-docs/issues/123)
 
 ---
 
-# State of DevOps report
+### State of DevOps report
 
 [![TBD](./images/organizational_performance.jpg)](https://www.thoughtworks.com/insights/blog/enabling-trunk-based-development-deployment-pipelines)
 
 ---
 
-# Trunk Based Development (TBD)
+### Trunk Based Development (TBD)
 
 ### Rules for TBD
 - **Small commits** (approx 10 - 15 lines)
@@ -230,36 +220,32 @@ I am Zeger Hendrikse, nice to meet you too ;-)
 - **No** branches (except for spikes)
 - _All code commits_ are reviewed ([early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html))
 
---
-
 See also [the TBD section](https://confluence.aws.abnamro.org/pages/viewpage.action?spaceKey=GRIDAD&title=Trunk+Based+Development)
 on the [software development pages](https://confluence.aws.abnamro.org/display/GRIDAD/Software+Development) 
 
 ---
 
-# TBD in action
+### TBD in action
 
 ![branches](./images/tbd_in_action.png)
 
 ---
 
-#More objections! The usual suspects...
+### More objections! The usual suspects...
 
-> ![Dave](./images/davefarley.jpg)
+![Dave](./images/davefarley.jpg)
 
 > _At one extreme I get “Heretic, burn him at the stake” kind of feedback, at_
   _the other “Yes, but it can’t possibly work without Feature Branching – you must_
-  _work in small teams and/or on trivially simple projects”._
-
-> -[Dave Farley](https://www.davefarley.net/?p=247)
+  _work in small teams and/or on trivially simple projects”._ &mdash; [Dave Farley](https://www.davefarley.net/?p=247)
 
 ---
 
-# I am (frequently) pulling from the mainline!
+### I am (frequently) pulling from the mainline!
 
 ---
 
-# TDB: small and frequent commits
+### TDB: small and frequent commits
 
 ### Low-frequency integration
 
@@ -269,7 +255,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-# TDB: small and frequent commits
+### TDB: small and frequent commits
 
 ### Low-frequency integration
 
@@ -279,7 +265,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-# TDB: small and frequent commits
+### TDB: small and frequent commits
 
 ### High-frequency integration
 
@@ -289,7 +275,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-# TBD: small and frequent commits
+### TBD: small and frequent commits
 
 ### High-frequency integration
 
@@ -299,92 +285,70 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-# But how about (major) refactorings?
+### But how about (major) refactorings?
 
-###Branching by abstraction, step 1
+### Branching by abstraction, step 1
 
 ![BBA](./images/bba-step-1.png)
 
 ---
 
-# But how about (major) refactorings?
+### But how about (major) refactorings?
 
-###Branching by abstraction, step 2
+### Branching by abstraction, step 2
 
 ![BBA](./images/bba-step-2.png)
 
 ---
 
-# But how about (major) refactorings?
+### But how about (major) refactorings?
 
-###Branching by abstraction, step 3
+### Branching by abstraction, step 3
 
 ![BBA](./images/bba-step-3.png)
 
 ---
 
-# But how about (major) refactorings?
+### But how about (major) refactorings?
 
-###Branching by abstraction, step 4
+### Branching by abstraction, step 4
 
 ![BBA](./images/bba-step-4.png)
 
 ---
 
-# But how about (major) refactorings?
+### But how about (major) refactorings?
 
-###Branching by abstraction, step 5
+### Branching by abstraction, step 5
 
 ![BBA](./images/bba-step-5.png)
 
 ---
 
-# But how about unfinished changes?
+### But how about unfinished changes?
 
 ![Toggles](./images/release-toggles-1.png)
 
 ---
 
-# But how about unfinished changes?
+### But how about unfinished changes?
 
 ![Toggles](./images/toggles-4.png)
 
 ---
 
-# But I have an immature team
+### But I have an immature team
 
 ![Team](./images/immature_team.jpg)
 
-##[Commit Early and Often](https://www.youtube.com/watch?v=Rep7vsUTaVI)
+## [Commit Early and Often](https://www.youtube.com/watch?v=Rep7vsUTaVI)
 
 ---
 
-# But regulators demand (proof of) four-eyes!
+### But regulators demand (proof of) four-eyes!
 
 
 [![Four-eyes](./images/four-eyes.jpg)](https://confluence.aws.abnamro.org/pages/viewpage.action?spaceKey=GRIDAD&title=Four-eyes+principle)
 
---
-
 See also [the TBD section](https://confluence.aws.abnamro.org/display/GRIDAD/Four-eyes+principle)
 on the [software development pages](https://confluence.aws.abnamro.org/display/GRIDAD/Software+Development) 
-
-    </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
-    <script>
-var slideshow = remark.create({
-  // Customize slide number label, either using a format string..
-  slideNumberFormat: 'Slide %current% of %total%',
-  // .. or by using a format function
-  slideNumberFormat: function (current, total) {
-    return 'Slide ' + current + ' of ' + total;
-  },
-
-  countIncrementalSlides: false,
-  highlightLanguage: 'java',
-  highlightStyle: 'monokai',
-}); 
-    </script>
-  </body>
-</html>
