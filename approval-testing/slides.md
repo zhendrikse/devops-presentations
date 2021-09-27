@@ -62,7 +62,7 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 1. Edit the code
 2. Test manually
-3. Pray you didn't broke anything
+3. Pray you didn't brake anything
 
 &nbsp;
 <div class="fragment">
