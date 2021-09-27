@@ -88,6 +88,83 @@ def update_quality(self):
 ```
 ---
 
+### Start with approval tests
+
+```python
+import unittest
+from approvaltests.combination_approvals import verify_all_combinations
+from gilded_rose import GildedRose, Item
+
+class GildedRoseTest(unittest.TestCase):
+  def test_add_combinatorial(self):
+    names = ["foo"]
+    sellIns = [0]
+    qualities = [0]
+    verify_all_combinations(self.do_update_quality, [names, sellIns, qualities])
+
+  def do_update_quality(self, name: str, sellIn: int, quality:int) -> str:
+    items = [Item(name, sellIn, quality)]
+    app = GildedRose(items)
+    app.update_quality()
+    return app.items[0]
+
+if __name__ == "__main__":
+    unittest.main()
+```
+---
+
+### Start with all the names
+
+- “Sulfuras, Hand of Ragnaros”
+- “Aged Brie”
+- “Backstage passes to a TAFKAL80ETC concert”
+---
+
+### Quality and Sell In days
+
+- `Quality 50`
+- `SellIn 11` <!-- .element: class="fragment"-->
+- `SellIn -1` <!-- .element: class="fragment"-->
+- `Quality 49` <!-- .element: class="fragment"-->
+
+---
+
+### Edge cases &amp; mutation testing
+
+- What if we change the "6" &rarr; "7" in line 19?
+- Add "6" to sell in <!-- .element: class="fragment"-->
+- What if we change the "50" &rarr; "49" in line 17? <!-- .element: class="fragment"-->
+- Add "48" to quality <!-- .element: class="fragment"-->
+- What if we change the "50" &rarr; "49" in line 20? <!-- .element: class="fragment"-->
+- Etc... <!-- .element: class="fragment"-->
+
+---
+
+### End result of approval tests
+
+```python
+import unittest
+from approvaltests.combination_approvals import verify_all_combinations
+from gilded_rose import GildedRose, Item
+
+class GildedRoseTest(unittest.TestCase):
+  def test_add_combinatorial(self):
+    names = ["foo", "Aged Brie", "Sulfuras, Hand of Ragnaros", "Backstage passes to a TAFKAL80ETC concert"]
+    sellIns = [-1, 2, 6, 0, 11, 7]
+    qualities = [0, 48, 49, 50, 47]
+    verify_all_combinations(self.do_update_quality, [names, sellIns, qualities])
+
+  def do_update_quality(self, name: str, sellIn: int, quality:int) -> str:
+    items = [Item(name, sellIn, quality)]
+    app = GildedRose(items)
+    app.update_quality()
+    return app.items[0]
+
+if __name__ == "__main__":
+    unittest.main()
+```
+---
+
 ### [Extract method](https://wiki.c2.com/?ExtractMethod)
 
 - Turn the fragment into a method whose name explains the purpose of the method
