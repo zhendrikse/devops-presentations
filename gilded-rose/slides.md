@@ -295,9 +295,118 @@ else:
 
 ---
 
-### [Replace conditional with polymorphism](https://refactoring.guru/replace-conditional-with-polymorphism)
+## [Replace conditional with polymorphism](https://refactoring.guru/replace-conditional-with-polymorphism)
 
-1. Create item subclasses
+---
+
+### Introduce Aged Brie class
+
+```python
+class AgedBrieItem(Item):
+  def update_quality(self) -> None:
+    if self.quality < 50:
+      self.quality += 1
+    self.sell_in -= 1
+    if self.sell_in < 0:
+      if self.quality < 50:
+        self.quality += 1
+```
+
+Test case
+
+```python
+def do_update_quality(self, name: str, sellIn: int, quality: int) -> str:
+  if name == "Aged Brie":
+    items = [AgedBrieItem(name, sellIn, quality)]
+  else:
+    items = [Item(name, sellIn, quality)]
+```
+
+---
+
+### The other subclasses
+
+```python
+class BackstagePassItem(Item):
+  def update_quality(self) -> None:
+    if self.quality < 50:
+      self.quality += 1
+      if self.sell_in < 11:
+        if self.quality < 50:
+          self.quality += 1
+      if self.sell_in < 6:
+        if self.quality < 50:
+          self.quality += 1
+
+    self.sell_in -= 1
+    if self.sell_in < 0:
+      self.quality = 0
+```
+
+---
+
+### The other subclasses
+
+```python
+class SulfurasItem(Item):
+  def update_quality(self) -> None:
+    pass
+```
+
+---
+
+### The base class
+
+```python
+class Item:
+  ...
+
+  def update_quality(self) -> None:
+    if self.quality > 0:
+      self.quality -= 1
+    self.sell_in -= 1
+```
+
+---
+
+### Set name in constructor
+
+```python
+class BackstagePassItem(Item):
+  def __init__(self, sell_in, quality):
+    super().__init__("Backstage passes to a TAFKAL80ETC concert", sell_in, quality)
+``` 
+
+---
+
+### Primitive obsession
+
+```python
+class Quality:
+  def __init__(self, quality: int):
+    self.value = quality
+
+  def increase(self):
+    if self.value < 50:
+      self.value += 1
+
+  def decrease(self):
+    if self.value > 0:
+      self.value -= 1
+```
+
+with
+
+```python
+class Item:
+  def __init__(self, name, sell_in, quality):
+    self.name = name
+    self.sell_in = sell_in
+    self.quality = Quality(quality)
+
+  def __repr__(self):
+    return "%s, %s, %s" % (self.name, self.sell_in, self.quality.value)
+```
 
 ---
 
