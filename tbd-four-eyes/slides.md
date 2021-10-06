@@ -1,35 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>The four-eyes principle</title>
-    <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-    </style>
-  </head>
-  <body>
-    <textarea id="source">
-
-class: center, middle
-
-#The four-eyes principle
+## The four-eyes principle
 
 ![Four eyes principle](./images/four-eyes.jpg)
 
-Zeger Hendriks**e**
+Zeger Hendrikse
 
 ---
 
-# Warming up: first question
+#### Warming up: first question
 
 ### What does CI mean?
 
@@ -40,7 +17,7 @@ Zeger Hendriks**e**
 
 ---
 
-# Warming up: first question
+#### Warming up: first question
 
 ### What does CI mean?
 
@@ -53,14 +30,14 @@ Zeger Hendriks**e**
 
 class: center, middle
 
-#The Death 
+### The Death 
 
 ![death](./images/hiclipart.com.png)
 
-#of Continuous Integration
+### of Continuous Integration
 ---
 
-# Agenda
+### Agenda
 
 - **The three ways of DevOps** (5 mins)
 --
@@ -84,7 +61,7 @@ class: center, middle
 
 ---
 
-# Context: three ways of DevOps
+### Context: three ways of DevOps
 
 1. First way:<br/>
 ![Git](./images/DevOps1.png)
@@ -99,7 +76,7 @@ class: center, middle
 
 ---
 
-# Warming up: second question
+#### Warming up: second question
 
 ### What does CD mean?
 
@@ -110,7 +87,7 @@ class: center, middle
 
 ---
 
-# Warming up: second question
+#### Warming up: second question
 
 ### What does CD mean?
 
@@ -121,37 +98,37 @@ class: center, middle
 
 ---
 
-# CICD Overview
+### CICD Overview
 
 ![CICD overview](./images/cicd-overview-1.png)
 
 ---
 
-# CICD Overview
+### CICD Overview
 
 ![CICD overview](./images/cicd-overview-2.png)
 
 ---
 
-# CICD Overview
+### CICD Overview
 
 ![CICD overview](./images/cicd-overview-3.png)
 
 ---
 
-# CICD Overview
+### CICD Overview
 
 ![CICD overview](./images/cicd-overview-4.png)
 
 ---
 
-# CICD Overview
+### CICD Overview
 
 ![CICD overview](./images/cicd-overview-5.png)
 
 ---
 
-# CI check: why version control
+#### CI check: why version control
 
 ### What is the primary purpose of a VCS/Git?
 
@@ -162,7 +139,7 @@ class: center, middle
 
 ---
 
-# CI check: why version control
+#### CI check: why version control
 
 ### What is the primary purpose of a VCS/Git?
 
@@ -173,25 +150,25 @@ class: center, middle
 
 ---
 
-# Do you practice Continuous Integration?
+### Do you practice Continuous Integration?
 
 [![Continuous Integration](./images/what_is_ci_1.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
 
 ---
 
-# Do you practice Continuous Integration?
+### Do you practice Continuous Integration?
 
 [![Continuous Integration](./images/what_is_ci_2.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
 
 ---
 
-# Do you practice Continuous Integration?
+### Do you practice Continuous Integration?
 
 [![Continuous Integration](./images/what_is_ci_3.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
 
 ---
 
-# CI final check
+#### CI final check
 
 ### What does Continuous Integration mean in practice?
 
@@ -202,7 +179,7 @@ class: center, middle
 
 ---
 
-# CI final check
+#### CI final check
 
 ### What does Continuous Integration mean in practice?
 
@@ -213,35 +190,33 @@ class: center, middle
 
 ---
 
-# Which branching strategy should I choose?
+### Which branching strategy should I choose?
 
 ![Choose](./images/pngwing.com.png)
 
 ---
 
-# So right off the bat ...
+### So right off the bat ...
 
 [![Git](./images/dontBranch.jpg)](https://www.davefarley.net/?p=247)
 
 ---
 
-#The Big Controversy
+### The Big Controversy
 
-> ![Dave](./images/davefarley.jpg)
+![Dave](./images/davefarley.jpg)
 
-> _[...] I get “Heretic, burn him at the stake” kind of feedback [...]_
-
-> -[Dave Farley](https://www.davefarley.net/?p=247)
+> [...] I get “Heretic, burn him at the stake” kind of feedback [...] &mdash; [Dave Farley](https://www.davefarley.net/?p=247)
 
 ---
 
-#The death of _continuous_ integration...
+### The death of _continuous_ integration...
 
 ![branches](./images/branches_intro.png)
 
 ---
 
-# Third question: amplify feedback loops
+#### Third question: amplify feedback loops
 
 ### Which is the odd one out?
 
@@ -252,7 +227,7 @@ class: center, middle
 
 ---
 
-# Third question: amplify feedback loops
+#### Third question: amplify feedback loops
 
 ### Which is the odd one out?
 
@@ -263,123 +238,122 @@ class: center, middle
 
 ---
 
-#Negative effects of branches
+### Negative effects of branches
 
-- Delay integration 
+- Delays integration 
+<!-- .element: class="fragment"-->
   - Slower feedback loops
-  - Kills _continuous_ integration
---
+<!-- .element: class="fragment"-->
+  - Kills continuous integration
+<!-- .element: class="fragment"-->
 
 - Increased change batch size
+<!-- .element: class="fragment"-->
   - Slower feedback loops
+<!-- .element: class="fragment"-->
   - Decreased deployment frequency
---
+<!-- .element: class="fragment"-->
 
-- Kill communication 
+- Kills communication 
+<!-- .element: class="fragment"-->
   - Headphone/hero developers!
+<!-- .element: class="fragment"-->
 
 ---
 
-# Definition by Jez Humble
-
-> ![Jez](./images/jezhumble.jpg)
+![Jez](./images/jezhumble.jpg)
 
 > _The trunk-based development is all about communication. We use version_
   _control to communicate what we're doing to the rest of the team. To do it_
-  _regularly enough, we have to work in very small batches._
-
->  -[Jez Humble](https://github.com/rht-labs/enablement-docs/issues/123)
+  _regularly enough, we have to work in very small batches._ [Jez Humble](https://github.com/rht-labs/enablement-docs/issues/123)
 
 ---
 
-# State of DevOps report
+### State of DevOps report
 
 [![TBD](./images/organizational_performance.jpg)](https://www.thoughtworks.com/insights/blog/enabling-trunk-based-development-deployment-pipelines)
 
 ---
 
-# Trunk Based Development (TBD)
+### Trunk Based Development (TBD)
 
 ### Rules for TBD
 - **Small commits** (approx 10 - 15 lines)
 - Commits (_self contained_ and _consistent_) include production and test code
 - Always commit and push together
 - **No** branches (except for spikes)
-- _All code commits_ are reviewed ([early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html))
-
---
-
-See also [the TBD section](https://confluence.aws.abnamro.org/pages/viewpage.action?spaceKey=GRIDAD&title=Trunk+Based+Development)
-on the [software development pages](https://confluence.aws.abnamro.org/display/GRIDAD/Software+Development) 
+- Code commits are reviewed ([early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html))
 
 ---
 
-# TBD in action
+### TBD in action
 
 ![branches](./images/tbd_in_action.png)
 
 ---
 
-class: center, middle
-
-#The four-eyes principle
+## The four-eyes principle
 
 ![Four eyes principle](./images/four-eyes.jpg)
 
 ---
 
-# Four-eyes is **NOT** equivalent to pull requests
+### Four-eyes is **NOT** equivalent to pull requests
 
---
 
-###Ok Zeger, I want to know more, tell me more! 
+#### Ok Zeger, I want to know more, tell me more! 
+<!-- .element: class="fragment"-->
 
 ---
 
-#The FEP is a risk control technique
+### The FEP is a risk control technique
 
 ![Pilots](./images/airline-pilot-language.jpg)
 
 ---
 
-#FEP: Segregation of Duties (SoD)
+### FEP: Segregation of Duties (SoD)
 
 ![WC eend](./images/wc-eend.png)
 
---
+---
+
+### FEP: Segregation of Duties (SoD)
 
 - Finance: mortgage requestor approves his own mortgage request 
---
+<!-- .element: class="fragment"-->
 
 - IT: developer writes and tests his own code
---
+<!-- .element: class="fragment"-->
 
 - [Etc.](https://simplicable.com/new/four-eyes-principle)
+<!-- .element: class="fragment"-->
 
 ---
 
-# SoD at financial institutions
-No one should be able to push his code and tests single-handedly to PRD
+### SoD at financial institutions
 
 ![Pipeline](./images/ci-cd-pipelines.png)
+
+No one should be able to push his code and tests single-handedly to PRD
+---
+
 ![Person](./images/pngwing.com.png)
 
 ---
 
-# What usually goes wrong
+### What usually goes wrong
 
 - And thus... what would the Pavlov reaction be?
   ![Pavlov](./images/pavlov-de-stopper.gif)
 
---
-
 - The answer to life, the universe and everything:
-
   ![Git](./images/Git-Icon.png)
+<!-- .element: class="fragment"-->
 
 ---
 
-# But really...
+### But really...
 
 _Somewhere_ an independent (automated!) approval should happen:
 
@@ -389,26 +363,25 @@ What did ABN-AMRO choose?
 
 ---
 
-# Automated registration of changes in Snow
+### Automated registration of changes in Snow
 
 - Minor and path versions are _pre_ approved
 - Major versions require manual approvals (still)
 
 ---
 
-# But I need my code reviews!
+### But I need my code reviews!
 
 ![Code review](./images/code_review.jpg)
 ... but do you **really** do?
 
 ---
 
-# But I need proof too!
+### But I need proof too!
 
 - Eventually it boils down to trust
   - PRs are often superficially reviewed
-  - TBD should involve _all_ team members
---
+  - TBD should involve all team members
 
 - We may need to educate the auditors
   - No more (additional) manual steps
@@ -416,14 +389,12 @@ What did ABN-AMRO choose?
 
 ---
 
-class: center, middle
-# Let's think
-# Let's be critical
-# Let's be inventive!
-
+#### Let's think
+### Let's be critical
+## Let's be inventive!
 
 ---
-# References
+### References
 - [Four-eyes principle](https://confluence.aws.abnamro.org/pages/viewpage.action?spaceKey=GRIDAD&amp;title=Four-eyes+principle)
 - [Trunk Based Development](https://confluence.aws.abnamro.org/display/GRIDAD/Trunk+Based+Development)
 ---
@@ -431,23 +402,3 @@ class: center, middle
 # Questions
 
 ![Person](./images/pngwing.com.png)
-
-    </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
-    <script>
-var slideshow = remark.create({
-  // Customize slide number label, either using a format string..
-  slideNumberFormat: 'Slide %current% of %total%',
-  // .. or by using a format function
-  slideNumberFormat: function (current, total) {
-    return 'Slide ' + current + ' of ' + total;
-  },
-
-  countIncrementalSlides: false,
-  highlightLanguage: 'java',
-  highlightStyle: 'monokai',
-}); 
-    </script>
-  </body>
-</html>

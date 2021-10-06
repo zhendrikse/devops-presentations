@@ -26,6 +26,28 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ---
 
+#### Warming up: first question
+
+### What does CI mean?
+
+* **A**: Continuous Improvement
+* **B**: Continuous Integration
+* **C**: Continuous Inspection
+* **D**: Continuous Insights
+
+---
+
+#### Warming up: first question
+
+### What does CI mean?
+
+* **A**: Continuous Improvement
+* **==&gt;B**: _Continuous Integration_ **&lt;==**
+* **C**: Continuous Inspection
+* **D**: Continuous Insights
+
+---
+
 ### Context: three ways of DevOps
 
 ![First way](./images/DevOps1.png)
@@ -36,6 +58,29 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ![Third way](./images/DevOps3.png)
 <!-- .element: class="fragment"-->
+
+---
+
+#### Warming up: second question
+
+### What does CD mean?
+
+* **A**: Continuous Delivery
+* **B**: Continuous Development
+* **C**: Continuous Deployment
+* **D**: Continuous Design
+
+---
+
+#### Warming up: second question
+
+### What does CD mean?
+
+* **==&gt;A**: _Continuous Delivery_ **&lt;==**
+* **B**: Continuous Development
+* **==&gt;C**: _Continuous Deployment_ **&lt;==**
+* **D**: Continuous Design
+
 
 ---
 
@@ -154,6 +199,12 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ---
 
+### Which branching strategy should I choose?
+
+![Choose](./images/pngwing.com.png)
+
+---
+
 ### So right off the bat ...
 
 [![Branching](./images/dontBranch.jpg)](https://www.davefarley.net/?p=247)
@@ -184,18 +235,26 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ### Negative effects of branches
 
-- Delay integration 
+- Delays integration 
+<!-- .element: class="fragment"-->
+  - Slower feedback loops
+<!-- .element: class="fragment"-->
+  - Kills continuous integration
 <!-- .element: class="fragment"-->
 
 - Increased change batch size
 <!-- .element: class="fragment"-->
+  - Slower feedback loops
+<!-- .element: class="fragment"-->
+  - Decreased deployment frequency
+<!-- .element: class="fragment"-->
 
-- Kill communication 
+- Kills communication 
+<!-- .element: class="fragment"-->
+  - Headphone/hero developers!
 <!-- .element: class="fragment"-->
 
 ---
-
-### Definition by Jez Humble
 
 ![Jez](./images/jezhumble.jpg)
 
@@ -218,10 +277,7 @@ I am Zeger Hendrikse, nice to meet you too 😉
 - Commits (_self contained_ and _consistent_) include production and test code
 - Always commit and push together
 - **No** branches (except for spikes)
-- _All code commits_ are reviewed ([early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html))
-
-See also [the TBD section](https://confluence.aws.abnamro.org/pages/viewpage.action?spaceKey=GRIDAD&title=Trunk+Based+Development)
-on the [software development pages](https://confluence.aws.abnamro.org/display/GRIDAD/Software+Development) 
+- Code commits are reviewed ([early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html))
 
 ---
 
