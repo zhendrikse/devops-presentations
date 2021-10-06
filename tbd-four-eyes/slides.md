@@ -28,8 +28,6 @@ Zeger Hendrikse
 
 ---
 
-class: center, middle
-
 ### The Death 
 
 ![death](./images/hiclipart.com.png)
@@ -40,39 +38,38 @@ class: center, middle
 ### Agenda
 
 - **The three ways of DevOps** (5 mins)
---
+<!-- .element: class="fragment"-->
 
 - **Summary/overview CICD** (5 mins)
---
+<!-- .element: class="fragment"-->
 
 - **Summary/overview TBD** (10 mins)
---
+<!-- .element: class="fragment"-->
 
 - **Summary/overview Segration of Duties** (10 mins)
---
+<!-- .element: class="fragment"-->
 
 - **Implementing SoD the right way** (5 mins)
---
+<!-- .element: class="fragment"-->
 
 - **Code reviews?** (5 mins)
---
+<!-- .element: class="fragment"-->
 
 - **Questions and answers!** (All that is left)
+<!-- .element: class="fragment"-->
 
 ---
 
 ### Context: three ways of DevOps
 
-1. First way:<br/>
-![Git](./images/DevOps1.png)
---
+1. ![Git](./images/DevOps1.png)
+<!-- .element: class="fragment"-->
 
-2. Second way:<br/>
-![Git](./images/DevOps2.png)
---
+2. ![Git](./images/DevOps2.png)
+<!-- .element: class="fragment"-->
 
-3. Third way:<br/>
-![Git](./images/DevOps3.png)
+3. ![Git](./images/DevOps3.png)
+<!-- .element: class="fragment"-->
 
 ---
 
