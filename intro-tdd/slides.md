@@ -176,7 +176,7 @@ Why? ==> Next slide
 
 **Small increments**, so we are [not allowed to write](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html):
 
-1. any code unless it is to make a failing test pass
+1. any production code before you have a failing test
 <!-- .element: class="fragment"-->
 2. any more of a test than is sufficient to fail (also compilation!)
 <!-- .element: class="fragment"-->
