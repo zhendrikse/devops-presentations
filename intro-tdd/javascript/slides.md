@@ -69,19 +69,19 @@ class Stack {
 ### Pop on an empty stack
 
 ```javascript
-...
+//...
   it("should throw an exception on a pop operation", function() {
     var myStack = new Stack()
     expect( function(){ myStack.pop() } )
       .toThrow(new Error("Stack underflow"));
   })
-...
+//...
 ```
 ----
 
 ```javascript
 class Stack {
-  ...
+  //...
   pop() {
     throw new Error("Stack underflow")
   }
@@ -125,12 +125,12 @@ describe("A new stack", function () {
 ### Push something onto the stack
 
 ```javascript
-...
+//...
   it("should not be empty after a push operation", function() {
     myStack.push(8)
     expect(myStack.isEmpty()).toEqual(false);
   })
-...
+//...
 ```
 ----
 
@@ -147,7 +147,7 @@ class Stack {
   push(newElement) {
     this.stackIsEmtpy = false
   }
-  ...
+  //...
 ```
 
 ---
@@ -164,14 +164,14 @@ class Stack {
 
 ```javascript
 class Stack {
-  ...
+  //...
 
   pop() {
     if (this.stackIsEmtpy)
       throw new Error("Stack underflow")
     this.stackIsEmtpy = true
   }
-  ...
+  //...
 ```
 
 ---
@@ -185,7 +185,7 @@ describe("A new stack", function () {
     myStack = new Stack()
   })
 
-  ...
+  //...
 
   describe("which had one push", function () {
     beforeEach(function () {
@@ -214,17 +214,53 @@ describe("A new stack", function () {
 
 
 ---
+### Pop should return a value
+
+```javascript
+  //...
+  describe("which had one push", function () {
+    beforeEach(function () {
+      myStack.push(8)
+    })
+    //...
+    it("should be empty after one pop", function () {
+      myStack.pop()
+      expect(myStack.isEmpty()).toEqual(true);
+    })
+    it("should return the value with a pop operation", function () {
+      expect(myStack.pop()).toEqual(8)
+    })
+  })
+```
+----
+
+```javascript
+class Stack {
+  //...
+
+  pop() {
+    if (this.stackIsEmtpy)
+      throw new Error("Stack underflow")
+    this.stackIsEmtpy = true
+
+    return 8
+  }
+  //...
+```
+
+
+---
+
 ### Two pushes and one pop!?
 
 ```javascript
-  ...
+  //...
   it("should not be empty after 2 pushes and 1 pop", function() {
-    myStack.push(8)
     myStack.push(9)
     myStack.pop()
     expect(myStack.isEmpty()).toEqual(false);
   })
-  ...
+  //...
 ```
 
 ----
@@ -280,30 +316,6 @@ class Stack {
   }
 }
 ```
-
----
-### Does the pop actually work?
-
-```javascript
-...
-    it("should pop the pushed element", function () {
-      expect(myStack.pop()).toEqual(8)
-    })
-....
-```
-----
-
-```javascript
-...
-  pop() {
-    if (this.isEmpty())
-      throw new Error("Stack underflow")
-    --this.size
-    return 8
-  }
-...
-```
-
 ---
 
 ### Our updated plan
@@ -318,13 +330,13 @@ class Stack {
 ### Let's extend the test
 
 ```javascript
-...
+//...
     it("should pop the pushed element", function () {
       expect(myStack.pop()).toEqual(8)
       myStack.push(9)
       expect(myStack.pop()).toEqual(9)
     })
-....
+//....
 ```
 
 ----
