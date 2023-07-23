@@ -16,35 +16,24 @@
 
 ---
 
-### But first ...
+![Zeger](./images/zeger_profile.jpg)
 
-[..] Who the f... are you?
+Zeger Hendrikse
 
-![Zeger](./images/zeger_profile.png)
-
-I am Zeger Hendrikse, nice to meet you too 😉
+DevOps coach
 
 ---
 
-#### Warming up: first question
+### Warming up: first question
 
-### What does CI mean?
+#### What does CI mean?
+
 
 * **A**: Continuous Improvement
-* **B**: Continuous Integration
+* **B**: Continuous Integration <font style="color: green;">&#10004;</font><!-- .element: class="fragment"-->
 * **C**: Continuous Inspection
 * **D**: Continuous Insights
 
----
-
-#### Warming up: first question
-
-### What does CI mean?
-
-* **A**: Continuous Improvement
-* **==&gt;B**: _Continuous Integration_ **&lt;==**
-* **C**: Continuous Inspection
-* **D**: Continuous Insights
 
 ---
 
@@ -61,141 +50,70 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ---
 
-#### Warming up: second question
+### Warming up: second question
 
-### What does CD mean?
+#### What does CD mean?
 
-* **A**: Continuous Delivery
+* **A**: Continuous Delivery <font style="color: green;">&#10004;</font><!-- .element: class="fragment"-->
 * **B**: Continuous Development
-* **C**: Continuous Deployment
+* **A**: Continuous Deployment <font style="color: green;">&#10004;</font><!-- .element: class="fragment"-->
 * **D**: Continuous Design
 
 ---
 
-#### Warming up: second question
-
-### What does CD mean?
-
-* **==&gt;A**: _Continuous Delivery_ **&lt;==**
-* **B**: Continuous Development
-* **==&gt;C**: _Continuous Deployment_ **&lt;==**
-* **D**: Continuous Design
-
-
----
-
 ### CI in the context of CD
 
-![CICD overview](./images/cicd-overview-1.png)
+<div class="r-stack">
+  <img class="fragment" src="./images/cicd-overview-1.png" />
+  <img class="fragment" src="./images/cicd-overview-2.png" />
+  <img class="fragment" src="./images/cicd-overview-3.png" />
+  <img class="fragment" src="./images/cicd-overview-4.png" />
+  <img class="fragment" src="./images/cicd-overview-5.png" />
+</div>
 
 ---
 
-### CI in the context of CD
+### First question: CI practice
 
-![CICD overview](./images/cicd-overview-2.png)
+#### What is **not** a CI best practice?
 
----
-
-### CI in the context of CD
-
-![CICD overview](./images/cicd-overview-3.png)
-
----
-
-### CI in the context of CD
-
-![CICD overview](./images/cicd-overview-4.png)
-
----
-
-## CI in the context of CD
-
-![CICD overview](./images/cicd-overview-5.png)
-
-
----
-
-#### First question: CI practice
-
-### Which of the following is **not** a CI best practice?
-
-* **A**: Deploy the code to a test environment
+* **A**: Deploy & test the code to a test environment <font style="color: green;">&#10004;</font><!-- .element: class="fragment"-->
 * **B**: Keep the build fast
 * **C**: Everyone commits to the baseline everyday
-* **D**: When the build fails, everybody stops and helps to fix the build
+* **D**: When the build fails, everybody stops to fix it
 
 ---
 
-#### First question: CI practice
+### Second question: version control
 
-### Which of the following is **not** a CI best practice?
+#### What is the primary purpose of a VCS?
 
-* **==&gt;A**: Deploy the code to a _test environment_ **&lt;==**
-* **B**: Keep the build fast
-* **C**: Everyone commits to the baseline everyday
-* **D**: When the build fails, everybody stops and helps to fix the build
-
----
-
-#### Second question: version control
-
-### What is the primary purpose of a VCS?
-
-* **A**: To facilitate roll backs and roll forwards
-* **B**: To facilitate seamless branching and merging
-* **C**: To facilitate communication and collaboration
-* **D**: To facilitate a central back-up of source code
-
----
-
-#### Second question: version control
-
-### What is the primary purpose of a VCS?
-
-* **A**: To facilitate roll backs and roll forwards
-* **B**: To facilitate seamless branching and merging
-* **==&gt;C**: To facilitate communication and collaboration **&lt;==**
-* **D**: To facilitate a central back-up of source code
+* **A**: Facilitate roll backs and roll forwards
+* **B**: Facilitate seamless branching and merging
+* **C**: Facilitate communication and collaboration <font style="color: green;">&#10004;</font><!-- .element: class="fragment"-->
+* **D**: Facilitate a central back-up of source code
 
 ---
 
 #### Do you practice Continuous Integration?
 
-[![Continuous Integration](./images/what_is_ci_1.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
+<div class="r-stack">
+  <img class="fragment" src="./images/what_is_ci_1.png" />
+  <img class="fragment" src="./images/what_is_ci_2.png" />
+  <img class="fragment" src="./images/what_is_ci_3.png" />
+</div>
+
 
 ---
 
-#### Do you practice Continuous Integration?
+### Third question: amplify feedback loops
 
-[![Continuous Integration](./images/what_is_ci_2.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
-
----
-
-#### Do you practice Continuous Integration?
-
-[![Continuous Integration](./images/what_is_ci_3.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
-
----
-
-#### Third question: amplify feedback loops
-
-### Which is the odd one out?
+#### Which is the odd one out?
 
 * **A** Integrate early and often
 * **B** Small batch size (containing changes)
 * **C** Pair programming
-* **D** Pull requests
-
----
-
-#### Third question: amplify feedback loops
-
-### Which is the odd one out?
-
-* **A** Integrate early and often
-* **B** Small batch size (containing changes)
-* **C** Pair programming
-* **==&gt;D** Pull requests **&lt;==**
+* **D** Pull requests <font style="color: green;">&#10004;</font><!-- .element: class="fragment"-->
 
 ---
 
@@ -235,24 +153,27 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ### Negative effects of branches
 
-- Delays integration 
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  Delays integration 
+  <!-- .element: class="fragment"-->
   - Slower feedback loops
-<!-- .element: class="fragment"-->
+  <!-- .element: class="fragment"-->
   - Kills continuous integration
-<!-- .element: class="fragment"-->
+  <!-- .element: class="fragment"-->
 
-- Increased change batch size
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  Increased change batch size
+  <!-- .element: class="fragment"-->
   - Slower feedback loops
-<!-- .element: class="fragment"-->
+  <!-- .element: class="fragment"-->
   - Decreased deployment frequency
-<!-- .element: class="fragment"-->
+  <!-- .element: class="fragment"-->
 
-- Kills communication 
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  Kills communication 
+  <!-- .element: class="fragment"-->
   - Headphone/hero developers!
-<!-- .element: class="fragment"-->
+  <!-- .element: class="fragment"-->
 
 ---
 
@@ -272,12 +193,16 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ### Trunk Based Development (TBD)
 
-### Rules for TBD
-- **Small commits** (approx 10 - 15 lines)
-- Commits (_self contained_ and _consistent_) include production and test code
-- Always commit and push together
-- **No** branches (except for spikes)
-- Code commits are reviewed ([early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html))
+- <!-- .element: class="fragment"-->
+  **Small commits** (approx 10 - 15 lines)
+- <!-- .element: class="fragment"-->
+  Commits (_self contained_ and _consistent_) include production and test code
+- <!-- .element: class="fragment"-->
+  Always commit and push together
+- <!-- .element: class="fragment"-->
+  **No** branches (except for spikes)
+- <!-- .element: class="fragment"-->
+  Review [early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html)
 
 ---
 
@@ -287,7 +212,7 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ---
 
-### More objections! The usual suspects...
+#### More objections: the usual suspects...
 
 ![Dave](./images/davefarley.jpg)
 
@@ -303,7 +228,7 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ### TDB: small and frequent commits
 
-### Low-frequency integration
+#### Low-frequency integration
 
 ![Merging](./images/merge_1.png)
 
@@ -313,7 +238,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ### TDB: small and frequent commits
 
-### Low-frequency integration
+#### Low-frequency integration
 
 ![Merging](./images/merge_2.png)
 
@@ -323,7 +248,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ### TDB: small and frequent commits
 
-### High-frequency integration
+#### High-frequency integration
 
 ![Merging](./images/merge_3.png)
 
@@ -333,7 +258,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ### TBD: small and frequent commits
 
-### High-frequency integration
+#### High-frequency integration
 
 ![Merging](./images/merge_4.png)
 
@@ -341,70 +266,69 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
-### Branching by abstraction, step 1
+##### Branching by abstraction, step 1
 
 ![BBA](./images/bba-step-1.png)
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
-### Branching by abstraction, step 2
+##### Branching by abstraction, step 2
 
 ![BBA](./images/bba-step-2.png)
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
-### Branching by abstraction, step 3
+##### Branching by abstraction, step 3
 
 ![BBA](./images/bba-step-3.png)
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
-### Branching by abstraction, step 4
+##### Branching by abstraction, step 4
 
 ![BBA](./images/bba-step-4.png)
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
-### Branching by abstraction, step 5
+##### Branching by abstraction, step 5
 
 ![BBA](./images/bba-step-5.png)
 
 ---
 
-### But how about unfinished changes?
+#### But how about unfinished changes?
 
 ![Toggles](./images/release-toggles-1.png)
 
 ---
 
-### But how about unfinished changes?
+#### But how about unfinished changes?
 
 ![Toggles](./images/toggles-4.png)
 
 ---
 
-### But I have an immature team
+#### But I have an immature team
 
 ![Team](./images/immature_team.jpg)
 
-## [Commit Early and Often](https://www.youtube.com/watch?v=Rep7vsUTaVI)
+#### [Commit Early and Often](https://www.youtube.com/watch?v=Rep7vsUTaVI)
+<!-- .element: class="fragment"-->
 
 ---
 
-### But regulators demand (proof of) four-eyes!
+#### But regulators demand (proof of) four-eyes!
 
 
-[![Four-eyes](./images/four-eyes.jpg)](https://confluence.aws.abnamro.org/pages/viewpage.action?spaceKey=GRIDAD&title=Four-eyes+principle)
+![Four-eyes](./images/four-eyes.jpg)
 
-See also [the TBD section](https://confluence.aws.abnamro.org/display/GRIDAD/Four-eyes+principle)
-on the [software development pages](https://confluence.aws.abnamro.org/display/GRIDAD/Software+Development) 
