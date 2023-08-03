@@ -30,17 +30,17 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 ---
 ![Goals](./images/goals.png)
 
-- Coding + testing are the same activity
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+Coding + testing are the same activity
 
-- The importance of [test contra-variance](https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+The importance of [test contra-variance](https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html)
 
-- See how TDD is done _in practice_
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+See how TDD is done _in practice_
 
-- Motivation to learn & practice more TDD
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+Motivation to learn & practice more TDD
 
 ---
 ### Rulez during this session
@@ -86,9 +86,7 @@ The goal is to illustrate <i>the TDD process</i>
 
 ## Contra-variance can only be achieved using TDD
 
-<div class="fragment">
-Why? ==> Next slide
-</div>
+Why? ==> Next slide <!-- .element: class="fragment"-->
 
 ---
 
@@ -176,12 +174,12 @@ Why? ==> Next slide
 
 **Small increments**, so we are [not allowed to write](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html):
 
-1. any production code before you have a failing test
-<!-- .element: class="fragment"-->
-2. any more of a test than is sufficient to fail (also compilation!)
-<!-- .element: class="fragment"-->
-3. any more code than is sufficient to pass the one failing unit test
-<!-- .element: class="fragment"-->
+1. <!-- .element: class="fragment"-->
+   any production code before you have a failing test
+2. <!-- .element: class="fragment"-->
+   any more of a test than is sufficient to fail (also compilation!)
+3. <!-- .element: class="fragment"-->
+   any more code than is sufficient to pass the one failing unit test
 
 ---
 
@@ -192,26 +190,25 @@ Why? ==> Next slide
 ---
 ### <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck's</a> [design rules](https://martinfowler.com/bliki/BeckDesignRules.html)
 
-1. Passes the tests
-2. Reveals intention ([Clean code](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29))
-3. No duplication ([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself))
-4. Fewest elements (<a href="http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork">Simplest thing that could possibly work</a>)
+1. <!-- .element: class="fragment"-->
+   Passes the tests
+2. <!-- .element: class="fragment"-->
+   Reveals intention ([Clean code](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29))
+3. <!-- .element: class="fragment"-->
+   No duplication ([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself))
+4. <!-- .element: class="fragment"-->
+   Fewest elements ([Simplest thing that could possibly work](http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork))
 
 ---
 
 ### Who is doing what
 
-<ul>
-<div>
-<li>Do you write unit test afterwards</li>
-</div>
-<div class="fragment">
-<li>Do you write unit test beforehand</li>
-</div>
-<div class="fragment">
-<li>Do you do TDD</li>
-</div>
-</ul>
+- <!-- .element: class="fragment"-->
+  Do you write unit test afterwards
+- <!-- .element: class="fragment"-->
+  Do you write unit test beforehand
+- <!-- .element: class="fragment"-->
+  Do you do TDD
 
 ---
 
@@ -245,9 +242,7 @@ Why? ==> Next slide
 
 &nbsp;
 
-<div class="fragment">
-Credits to <a href="http://barbra-coco.dyndns.org/yuri/Kent_Beck_TDD.pdf">Kent Beck</a> and <a href="https://quoteinvestigator.com/2017/11/18/planning/">Eisenhower</a>!
-</div>
+Credits to <a href="http://barbra-coco.dyndns.org/yuri/Kent_Beck_TDD.pdf">Kent Beck</a> and <a href="https://quoteinvestigator.com/2017/11/18/planning/">Eisenhower</a>! <!-- .element: class="fragment"-->
 
 ---
 
@@ -264,29 +259,20 @@ Credits to <a href="http://barbra-coco.dyndns.org/yuri/Kent_Beck_TDD.pdf">Kent B
 
 ### Retrospective
 
-<ul>
-<div>
-<li><a href="http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html">Tests become more <i>specific</i>, code more <i>generic</i></a></li>
-</div>
-<div class="fragment">
-<li><a href="../ci-tbd/index.html">TBD</a> is a no-brainer</li>
-</div>
-<div class="fragment">
-<li>Difficulty is postponing "the gold"</li>
-</div>
-<div class="fragment">
-<li><a href="https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html">Contravariant test suites</a></li>
-</div>
-<div class="fragment">
-<li>1, 2, N</li>
-</div>
-<div class="fragment">
-<li>Tests grouped according to shared set-up</li>
-</div>
-<div class="fragment">
-<li>What is still left to test?</li>
-</div>
-</ul>
+- <!-- .element: class="fragment"-->
+  [Tests become more _specific_, code more _generic_](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html)
+- <!-- .element: class="fragment"-->
+  [TBD](../ci-tbd/index.html) becomes a no-brainer
+- <!-- .element: class="fragment"-->
+  Difficulty is "postponing the gold"
+- <!-- .element: class="fragment"-->
+  [Contravariant test suites](https://blog.cleancoder.com/uncle-bob/2017/10/03/TestContravariance.html)
+- <!-- .element: class="fragment"-->
+  1, 2, N
+- <!-- .element: class="fragment"-->
+  Tests grouped according to shared set-up
+- <!-- .element: class="fragment"-->
+  What is still left to test?
 
 ---
 
