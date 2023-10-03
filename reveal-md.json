@@ -1,0 +1,11 @@
+{
+    "controls": true,
+    "controlsLayout": "edges",
+    "progress": true,
+    "slideNumber": true,
+    "revealOptions": {
+      "transition": "slide"
+    },
+    "pdfSeparateFragments": true
+  }
+  
