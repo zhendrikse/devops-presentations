@@ -1,3 +1,11 @@
+---
+title: The DORA metrics
+author: Zeger Hendrikse
+date: 2023-10-04
+theme: dracula
+highlightTheme: github-dark
+---
+
 ### Software Delivery Process
 ### Measuring Performance
 

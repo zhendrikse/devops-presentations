@@ -1,3 +1,11 @@
+---
+title: A systemic approach to DevOps
+author: Zeger Hendrikse
+date: 2023-10-04
+theme: dracula
+highlightTheme: github-dark
+---
+
 ###### A systemic case for DevOps
 
 <div class="r-stack">
@@ -24,12 +32,12 @@
 
 ##### DevOps is
 
-A combination of **culture and set of skills** 
-to bring **small changes** to production
-**fast and frequently** 
-
-in order to retrieve **feedback from production** 
-to **continuously improve** (both in way-of-working and product)
+> A combination of **culture and set of skills** 
+> to bring **small changes** to production
+> **fast and frequently** 
+> 
+> in order to retrieve **feedback from production** 
+> to **continuously improve** (both in way-of-working and product)
 
 ---
 

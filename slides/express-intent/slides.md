@@ -12,7 +12,7 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 ---
 
-![Goals](../../images/goals.png)
+![Goals](./images/goals.png)
 
 - <!-- .element: class="fragment"-->
   ...
@@ -25,8 +25,8 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 ### [Martin Fowler](https://martinfowler.com/): good programmers
 
-![Martin Fowler](../../images/fowler.jpg)
+![Martin Fowler](./images/fowler.jpg)
 
-A fool can write code that a computer can understand.
+> A fool can write code that a computer can understand.
 Good programmers write code that humans can understand.
 
