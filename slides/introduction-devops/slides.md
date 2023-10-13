@@ -16,14 +16,10 @@ highlightTheme: github-dark
 
 ![Goals](./images/goals.png)
 
-- <!-- .element: class="fragment"-->
-  What is DevOps
-- <!-- .element: class="fragment"-->
-  Measuring
-- <!-- .element: class="fragment"-->
-  What's in it for us?
-- <!-- .element: class="fragment"-->
-  Coaching approach
+- <!-- .element: class="fragment"--> What is DevOps
+- <!-- .element: class="fragment"--> Measuring
+- <!-- .element: class="fragment"--> What's in it for us?
+- <!-- .element: class="fragment"--> Coaching approach
 
 ---
 
@@ -41,12 +37,10 @@ highlightTheme: github-dark
 
 ## DevOps working definition
 
-> A combination of **culture and set of skills** 
-> to bring **small changes** to production
-> **fast and frequently** 
-> 
-> in order to retrieve **feedback from production** 
-> to **continuously improve** (both in way-of-working and product)
+> A **culture** and **skill set** to bring **small software changes**
+> **quickly and reliably** to **production** and collect
+> **feedback** from **production** in order to **continuously improve**
+> (in product and method of working)
 
 
 ---
@@ -65,6 +59,55 @@ highlightTheme: github-dark
 ## Three
 
 # Ways
+
+---
+
+### First way: flow / Systems thinking
+
+<div class="r-stack">
+  <img class="fragment" src="./images/three-ways-1.png" />
+  <img class="fragment" src="./images/three-ways-2.png" />
+  <img class="fragment" src="./images/three-ways-3.png" />
+</div>
+
+vrijdagmiddag om vijf uur naar productie ...<!-- .element class="fragment" -->
+
+... en relaxed het weekend in<!-- .element class="fragment" -->
+
+---
+
+<!-- .element data-background="./images/house-painting-grandma.jpg" -->
+
+<div style="backdrop-filter: blur(5px);"> 
+
+<h3 style="color: #4dabf7">Second way: amplify feedback loops</h3>
+
+<div class="r-stack">
+<img class="fragment" alt="Second way" src="./images/three-ways-3.png" /> 
+<img class="fragment" alt="Second way" src="./images/three-ways-4.png" /> 
+</div>
+
+&nbsp;
+
+<p class="fragment" style="font-weight: bold; font-style: em">
+<em>In contact staan met wat je maakt</em>
+</p>
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+</div>
+
+---
+
+### Third way: learning &amp; experimentation
+
+<div class="r-stack">
+<img class="fragment" alt="Third way" src="./images/three-ways-4.png" /> 
+<img class="fragment" alt="Third way" src="./images/three-ways-5.png" /> 
+</div>
 
 ---
 

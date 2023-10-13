@@ -19,17 +19,13 @@ credits: Remko Seelig
 
 ### Agenda
 
-- <!-- .element: class="fragment" -->
-  Motivation
+- <!-- .element: class="fragment" --> Motivation
 
-- <!-- .element: class="fragment" -->
-  Problematic metrics
+- <!-- .element: class="fragment" --> Problematic metrics
 
-- <!-- .element: class="fragment" -->
-  Proper metrics
+- <!-- .element: class="fragment" --> Proper metrics
 
-- <!-- .element: class="fragment" -->
- DORA
+- <!-- .element: class="fragment" --> DORA
   - Relation to software delivery performance
   - DORA metrics
 
@@ -37,14 +33,11 @@ credits: Remko Seelig
 
 ### Motivation: situation sketches
 
-1. <!-- .element: class="fragment" -->
-  Is my (expensive) coach effective?
+1. <!-- .element: class="fragment" --> Is my (expensive) coach effective?
 
-2. <!-- .element: class="fragment" -->
-   Happy customer + end-to-end resp. &rarr; burn-out?
+2. <!-- .element: class="fragment" --> Happy customer + end-to-end resp. &rarr; burn-out?
 
-3. <!-- .element: class="fragment" -->
-   Swift updates while maintaining stability?
+3. <!-- .element: class="fragment" --> Swift updates while maintaining stability?
 
 ---
 
@@ -52,15 +45,11 @@ credits: Remko Seelig
 
 What happens if you measure
 
-- <!-- .element: class="fragment" -->
-  Measure number of new features &#8594; ...
-  - <!-- .element: class="fragment" -->
-    ops engineers get flooded.
+- <!-- .element: class="fragment" --> Measure number of new features &#8594; ...
+  - <!-- .element: class="fragment" --> ops engineers get flooded.
 
-- <!-- .element: class="fragment" -->
-  Measure the stability of the system &#8594; ...
-  - <!-- .element: class="fragment" -->
-    ops creating rigid change processes.
+- <!-- .element: class="fragment" --> Measure the stability of the system &#8594; ...
+  - <!-- .element: class="fragment" --> ops creating rigid change processes.
 
 Local optimizations lead to conflicting concerns!
 <!-- .element: class="fragment" -->
@@ -69,20 +58,14 @@ Local optimizations lead to conflicting concerns!
 
 #### Problematic metrics: [Hawthorne effect](https://en.wikipedia.org/wiki/Hawthorne_effect)
 
-- <!-- .element: class="fragment" -->
-  The lines of code &#8594; ...
-  - <!-- .element: class="fragment" -->
-  developers writing many short/useless lines.
+- <!-- .element: class="fragment" --> The lines of code &#8594; ...
+  - <!-- .element: class="fragment" --> developers writing many short/useless lines.
 
-- <!-- .element: class="fragment" -->
-  The number of defects fixed &#8594; ...
-  - <!-- .element: class="fragment" -->
-  testers logging trivial/simpel-to-fix bugs.
+- <!-- .element: class="fragment" --> The number of defects fixed &#8594; ...
+  - <!-- .element: class="fragment" --> testers logging trivial/simpel-to-fix bugs.
 
-- <!-- .element: class="fragment" -->
-  Code coverage &#8594; ...
-  - <!-- .element: class="fragment" -->
-  testing of getters and setters
+- <!-- .element: class="fragment" --> Code coverage &#8594; ...
+  - <!-- .element: class="fragment" --> testing of getters and setters
 
 
 **Output** _does not_ contribute to a useful outcome!
@@ -93,16 +76,12 @@ Local optimizations lead to conflicting concerns!
 #### Hallmarks of proper metrics
 
 
-- <!-- .element: class="fragment" -->
-  A _global_ outcome, i.e. the _whole IT value chain_
-  - <!-- .element: class="fragment" -->
-    First way from [The Three Ways](https://itrevolution.com/the-three-ways-principles-underpinning-devops/)
+- <!-- .element: class="fragment" --> A _global_ outcome, i.e. the _whole IT value chain_
+  - <!-- .element: class="fragment" --> First way from [The Three Ways](https://itrevolution.com/the-three-ways-principles-underpinning-devops/)
 
 
-- <!-- .element: class="fragment" -->
-  Focus on _outcomes_ rather than _output_
-  - <!-- .element: class="fragment" -->
-    [Agile Manifesto](https://agilemanifesto.org/): 
+- <!-- .element: class="fragment" --> Focus on _outcomes_ rather than _output_
+  - <!-- .element: class="fragment" --> [Agile Manifesto](https://agilemanifesto.org/): 
     "to satisfy the customer through early and continuous delivery of valuable software"
 
 ---
