@@ -6,7 +6,7 @@ theme: dracula
 highlightTheme: github-dark
 ---
 
-<section data-background-image="./images/edward-howell-yl6xgqD3X14-unsplash.jpg">
+<!-- .element data-background-image="./images/trunk-in-forest.jpg" -->
 
 ## Trunk Based Development
 
@@ -20,15 +20,13 @@ highlightTheme: github-dark
 
 &nbsp;
 
-</section>
-
 ---
 
 ### But first ...
 
 [..] Who the f... are you?
 
-![Zeger](./images/zeger_profile.png)
+![Zeger](./images/zeger_profile.jpg)
 
 I am Zeger Hendrikse, nice to meet you too 😉
 
@@ -38,34 +36,43 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ### What does CI mean?
 
-* **A**: Continuous Improvement
-* **B**: Continuous Integration
-* **C**: Continuous Inspection
-* **D**: Continuous Insights
+<div class="r-stack" align="left">
+
+<p><!-- .element class="fragment" -->
+<b>A:</b> Continuous Improvement<br/>
+<b>B:</b> Continuous Integration<br/>
+<b>C:</b> Continuous Inspection<br/>
+<b>D:</b> Continuous Insights<br/>
+</p>
+
+<p><!-- .element class="fragment" -->
+<font style="color:#ff0000; font-weight: bold">A:</font> Continuous Improvement<br/>
+<font style="color:#00ff00; font-weight: bold">B:</font> Continuous Integration<br/>
+<font style="color:#ff0000; font-weight: bold">C:</font> Continuous Inspection<br/>
+<font style="color:#ff0000; font-weight: bold">D:</font> Continuous Insights<br/>
+</p>
+
+</div>
 
 ---
 
-#### Warming up: first question
+### The
 
-### What does CI mean?
+## Three
 
-* **A**: Continuous Improvement
-* **==&gt;B**: _Continuous Integration_ **&lt;==**
-* **C**: Continuous Inspection
-* **D**: Continuous Insights
+# Ways
 
 ---
 
-### Context: three ways of DevOps
+### Amplify feedback loops
 
-![First way](./images/DevOps1.png)
-<!-- .element: class="fragment"-->
-
-![Second way](./images/DevOps2.png)
-<!-- .element: class="fragment"-->
-
-![Third way](./images/DevOps3.png)
-<!-- .element: class="fragment"-->
+<div class="r-stack">
+  <img class="fragment" src="./images/three-ways-1.png" />
+  <img class="fragment" src="./images/three-ways-2.png" />
+  <img class="fragment" src="./images/three-ways-3.png" />
+  <img class="fragment" src="./images/three-ways-4.png" />
+  <img class="fragment" src="./images/three-ways-5.png" />
+</div>
 
 ---
 
@@ -73,21 +80,21 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ### What does CD mean?
 
-* **A**: Continuous Delivery
-* **B**: Continuous Development
-* **C**: Continuous Deployment
-* **D**: Continuous Design
+<div class="r-stack" align="left">
 
----
+<p><!-- .element class="fragment" -->
+<b>A:</b> Continuous Delivery<br/>
+<b>B:</b> Continuous Development<br/>
+<b>C:</b> Continuous Deployment<br/>
+<b>D:</b> Continuous Design<br/>
+</p>
 
-#### Warming up: second question
-
-### What does CD mean?
-
-* **==&gt;A**: _Continuous Delivery_ **&lt;==**
-* **B**: Continuous Development
-* **==&gt;C**: _Continuous Deployment_ **&lt;==**
-* **D**: Continuous Design
+<p><!-- .element class="fragment" -->
+<font style="color:#00ff00; font-weight: bold">A:</font> Continuous Delivery<br/>
+<font style="color:#ff0000; font-weight: bold">B:</font> Continuous Development<br/>
+<font style="color:#ff0000; font-weight: bold">C:</font> Continuous Deployment<br/>
+<font style="color:#ff0000; font-weight: bold">D:</font> Continuous Design<br/>
+</p>
 
 ---
 
@@ -105,7 +112,7 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 #### First question: CI practice
 
-##### Which of the following is **not** a CI best practice?
+#### Which of the following is **not** a CI best practice?
 
 <div class="r-stack" align="left">
 
@@ -221,24 +228,16 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ### Negative effects of branches
 
-- Delays integration 
-<!-- .element: class="fragment"-->
-  - Slower feedback loops
-  <!-- .element: class="fragment"-->
-    - Kills continuous integration
-    <!-- .element: class="fragment"-->
+- <!-- .element class="fragment" --> Delays integration 
+  - Slower feedback loops <!-- .element: class="fragment"-->
+    - Kills continuous integration <!-- .element: class="fragment"-->
 
-- Increased change batch size
-<!-- .element: class="fragment"-->
-  - Slower feedback loops
-  <!-- .element: class="fragment"-->
-    - Decreased deployment frequency
-    <!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"--> Increased change batch size 
+  - Slower feedback loops <!-- .element: class="fragment"-->
+    - Decreased deployment frequency <!-- .element: class="fragment"-->
 
-- Kills communication 
-<!-- .element: class="fragment"-->
-  - Headphone/hero developers!
-  <!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"--> Kills communication 
+  - Headphone/hero developers!  <!-- .element: class="fragment"-->
 
 ---
 
@@ -256,14 +255,20 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ---
 
-### Trunk Based Development (TBD)
+### Trunk Based Development 
 
-### Rules for TBD
-- **Small commits** (approx 10 - 15 lines)
-- Commits (_self contained_ and _consistent_) include production and test code
-- Always commit and push together
-- **No** branches (except for spikes)
-- Code commits are reviewed ([early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html))
+### Characteristics of TBD
+
+- <!-- .element class="fragment" --> 
+  **Small commits** (approx 10 - 15 lines) 
+- <!-- .element class="fragment" --> 
+  Commits (_self contained_ and _consistent_) include production and test code
+- <!-- .element class="fragment" --> 
+  Always commit and push together
+- <!-- .element class="fragment" --> 
+  **No** branches (except for spikes)
+- <!-- .element class="fragment" --> 
+  Code commits are reviewed ([early and synchronously](http://allankelly.blogspot.co.uk/2015/03/code-and-other-reviews-small-piece-of.html))
 
 ---
 
@@ -273,7 +278,7 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ---
 
-### More objections! The usual suspects...
+##### More objections: the usual suspects...
 
 ![Dave](./images/davefarley.jpg)
 
@@ -283,11 +288,14 @@ I am Zeger Hendrikse, nice to meet you too 😉
 
 ---
 
-### I am (frequently) pulling from the mainline!
+# But ...
+
+_I am (frequently) pulling from the mainline!_
+<!-- .element class="fragment" -->
 
 ---
 
-### TDB: small and frequent commits
+#### TDB: small and frequent commits
 
 ### Low-frequency integration
 
@@ -297,7 +305,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### TDB: small and frequent commits
+#### TDB: small and frequent commits
 
 ### Low-frequency integration
 
@@ -307,7 +315,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### TDB: small and frequent commits
+#### TDB: small and frequent commits
 
 ### High-frequency integration
 
@@ -317,7 +325,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### TBD: small and frequent commits
+#### TBD: small and frequent commits
 
 ### High-frequency integration
 
@@ -327,7 +335,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
 ### Branching by abstraction, step 1
 
@@ -335,7 +343,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
 ### Branching by abstraction, step 2
 
@@ -343,7 +351,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
 ### Branching by abstraction, step 3
 
@@ -351,7 +359,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
 ### Branching by abstraction, step 4
 
@@ -359,7 +367,7 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### But how about (major) refactorings?
+#### But how about (major) refactorings?
 
 ### Branching by abstraction, step 5
 
@@ -367,30 +375,25 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
-### But how about unfinished changes?
+#### But how about unfinished changes?
 
-![Toggles](./images/release-toggles-1.png)
-
----
-
-### But how about unfinished changes?
-
-![Toggles](./images/toggles-4.png)
+<div class="r-stack">
+  <img class="fragment" src="./images/release-toggles-1.png" />
+  <img class="fragment" src="./images/toggles-4.png" />
+</div>
 
 ---
 
-### But I have an immature team
+#### But I have an immature team
 
 ![Team](./images/immature_team.jpg)
 
-## [Commit Early and Often](https://www.youtube.com/watch?v=Rep7vsUTaVI)
+### [Commit Early and Often](https://www.youtube.com/watch?v=Rep7vsUTaVI)
 
 ---
 
-### But regulators demand (proof of) four-eyes!
+#### But regulators demand (proof of) four-eyes!
 
 
 [![Four-eyes](./images/four-eyes.jpg)](https://confluence.aws.abnamro.org/pages/viewpage.action?spaceKey=GRIDAD&title=Four-eyes+principle)
 
-See also [the TBD section](https://confluence.aws.abnamro.org/display/GRIDAD/Four-eyes+principle)
-on the [software development pages](https://confluence.aws.abnamro.org/display/GRIDAD/Software+Development) 
