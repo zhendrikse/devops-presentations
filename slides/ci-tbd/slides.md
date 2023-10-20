@@ -392,6 +392,12 @@ Suppose S1 and V1 contain a merge conflict...
 
 ---
 
+##### Summary
+
+![Summary](./images/tbd.webp) <!-- .element width="80%" height="80%" -->
+
+---
+
 #### But regulators demand (proof of) four-eyes!
 
 
