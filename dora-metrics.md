@@ -76,12 +76,16 @@ Local optimizations lead to conflicting concerns!
 #### Hallmarks of proper metrics
 
 
-- <!-- .element: class="fragment" --> A _global_ outcome, i.e. the _whole IT value chain_
-  - <!-- .element: class="fragment" --> First way from [The Three Ways](https://itrevolution.com/the-three-ways-principles-underpinning-devops/)
+- <!-- .element: class="fragment" --> 
+  A _global_ outcome, i.e. the _whole IT value chain_
+  - <!-- .element: class="fragment" --> 
+    First way from [The Three Ways](https://itrevolution.com/the-three-ways-principles-underpinning-devops/)
 
 
-- <!-- .element: class="fragment" --> Focus on _outcomes_ rather than _output_
-  - <!-- .element: class="fragment" --> [Agile Manifesto](https://agilemanifesto.org/): 
+- <!-- .element: class="fragment" --> 
+  Focus on _outcomes_ rather than _output_
+  - <!-- .element: class="fragment" --> 
+    [Agile Manifesto](https://agilemanifesto.org/): 
     "to satisfy the customer through early and continuous delivery of valuable software"
 
 ---

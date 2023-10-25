@@ -26,7 +26,7 @@ highlightTheme: github-dark
 
 [..] Who the f... are you?
 
-![Zeger](./images/zeger_profile.jpg)
+![Zeger](./images/zeger_profile.jpg) <!-- .element height="75%" width="75%" -->
 
 I am Zeger Hendrikse, nice to meet you too 😉
 

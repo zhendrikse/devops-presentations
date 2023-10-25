@@ -1,3 +1,11 @@
+---
+title: Connascence
+author: Zeger Hendrikse
+date: 2023-10-04
+theme: dracula
+highlightTheme: github-dark
+---
+
 ### Coupling
 
 ## Cohesion
@@ -27,12 +35,10 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 ---
 
-<section data-background-image="./images/aldebaran-s-O-6kqnEvO1s-unsplash.jpg">
+<!-- .element data-background-image="./images/aldebaran-s-O-6kqnEvO1s-unsplash.jpg" -->
 
-# Connascence
+## Connascence
 
-
-&nbsp;
 
 &nbsp;
 
@@ -42,9 +48,10 @@ by [Zeger Hendrikse](https://www.it-essence.nl/)
 
 &nbsp;
 
-## [The GUT of Software Design](https://www.youtube.com/watch?v=NLT7Qcn_PmI)
+&nbsp;
 
-</section>
+### [The GUT of Software Design](https://www.youtube.com/watch?v=NLT7Qcn_PmI)
+
 ---
 
 ### Connascence
