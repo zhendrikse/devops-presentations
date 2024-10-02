@@ -5,9 +5,10 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-      "dev": "reveal-md slides/ --disable-auto-open -w",
-      "slides": "reveal-md slides/ -w",
-      "build": "reveal-md slides/ --static"
+      "dev": "reveal-md ./ --disable-auto-open -w",
+      "slides": "reveal-md ./ -w",
+      "company-slides": "reveal-md -css company.css ./ -w",
+      "build": "reveal-md ./ --static"
     },
     "dependencies": {
       "@fontsource/inter": "^4.5.0",

@@ -10,21 +10,23 @@ Zeger Hendrikse
 
 ### What does CI mean?
 
-* **A**: Continuous Improvement
-* **B**: Continuous Integration
-* **C**: Continuous Inspection
-* **D**: Continuous Insights
+<div class="r-stack" align="left">
 
----
+<p><!-- .element class="fragment" -->
+<b>A:</b> Continuous Improvement<br />
+<b>B:</b> Continuous Integration<br />
+<b>C:</b> Continuous Inspection<br />
+<b>D:</b> Continuous Insights<br />
+</p>
 
-#### Warming up: first question
+<p><!-- .element class="fragment" -->
+<font style="color:#FF0000; font-weight: bold">A:</font> Continuous Improvement<br />
+<font style="color:#00FF00; font-weight: bold">B:</font> Continuous Integration<br />
+<font style="color:#FF0000; font-weight: bold">C:</font> Continuous Inspection<br />
+<font style="color:#FF0000; font-weight: bold">D:</font> Continuous Insights<br />
+</p>
 
-### What does CI mean?
-
-* **A**: Continuous Improvement
-* **==&gt;B**: _Continuous Integration_ **&lt;==**
-* **C**: Continuous Inspection
-* **D**: Continuous Insights
+</div>
 
 ---
 
@@ -37,50 +39,39 @@ Zeger Hendrikse
 
 ### Agenda
 
-- **The three ways of DevOps** (5 mins)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  **The three ways of DevOps** (5 mins)
 
-- **Summary/overview CICD** (5 mins)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  **Summary/overview CICD** (5 mins)
 
-- **Summary/overview TBD** (10 mins)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  **Summary/overview TBD** (10 mins)
 
-- **Summary/overview Segration of Duties** (10 mins)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  **Summary/overview Segration of Duties** (10 mins)
 
-- **Implementing SoD the right way** (5 mins)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  **Implementing SoD the right way** (5 mins)
 
-- **Code reviews?** (5 mins)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  **Code reviews?** (5 mins)
 
-- **Questions and answers!** (All that is left)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  **Questions and answers!** (All that is left)
 
 ---
 
 ### Context: three ways of DevOps
 
-1. ![Git](./images/DevOps1.png)
-<!-- .element: class="fragment"-->
+1. <!-- .element: class="fragment"-->
+   ![Git](./images/DevOps1.png)
 
-2. ![Git](./images/DevOps2.png)
-<!-- .element: class="fragment"-->
+2. <!-- .element: class="fragment"-->
+   ![Git](./images/DevOps2.png)
 
-3. ![Git](./images/DevOps3.png)
-<!-- .element: class="fragment"-->
-
----
-
-#### Warming up: second question
-
-### What does CD mean?
-
-* **A**: Continuous Delivery
-* **B**: Continuous Development
-* **C**: Continuous Deployment
-* **D**: Continuous Design
+3. <!-- .element: class="fragment"-->
+   ![Git](./images/DevOps3.png)
 
 ---
 
@@ -88,40 +79,35 @@ Zeger Hendrikse
 
 ### What does CD mean?
 
-* **==&gt;A**: _Continuous Delivery_ **&lt;==**
-* **B**: Continuous Development
-* **==&gt;C**: _Continuous Deployment_ **&lt;==**
-* **D**: Continuous Design
+<div class="r-stack" align="left">
+
+<p><!-- .element class="fragment" -->
+<b>A:</b> Continuous Delivery<br />
+<b>B:</b> Continuous Development<br />
+<b>C:</b> Continuous Deployment<br />
+<b>D:</b> Continuous Design<br />
+</p>
+
+<p><!-- .element class="fragment" -->
+<font style="color:#00FF00; font-weight: bold">A:</font> Continuous Delivery<br />
+<font style="color:#FF0000; font-weight: bold">B:</font> Continuous Development<br />
+<font style="color:#00FF00; font-weight: bold">C:</font> Continuous Deployment<br />
+<font style="color:#FF0000; font-weight: bold">D:</font> Continuous Design<br />
+</p>
+
+</div>
 
 ---
 
 ### CICD Overview
 
-![CICD overview](./images/cicd-overview-1.png)
-
----
-
-### CICD Overview
-
-![CICD overview](./images/cicd-overview-2.png)
-
----
-
-### CICD Overview
-
-![CICD overview](./images/cicd-overview-3.png)
-
----
-
-### CICD Overview
-
-![CICD overview](./images/cicd-overview-4.png)
-
----
-
-### CICD Overview
-
-![CICD overview](./images/cicd-overview-5.png)
+<div class="r-stack">
+  <img class="fragment" src="./images/cicd-overview-1.png" />
+  <img class="fragment" src="./images/cicd-overview-2.png" />
+  <img class="fragment" src="./images/cicd-overview-3.png" />
+  <img class="fragment" src="./images/cicd-overview-4.png" />
+  <img class="fragment" src="./images/cicd-overview-5.png" />
+</div>
 
 ---
 
@@ -129,39 +115,33 @@ Zeger Hendrikse
 
 ### What is the primary purpose of a VCS/Git?
 
-* **A**: To facilitate roll backs and roll forwards
-* **B**: To facilitate seamless branching and merging
-* **C**: To facilitate communication and collaboration
-* **D**: To facilitate a central back-up of source code
+<div class="r-stack" align="left">
 
----
+<p><!-- .element class="fragment" -->
+<b>A:</b> To facilitate roll backs and roll forwards<br />
+<b>B:</b> To facilitate seamless branching and merging<br />
+<b>C:</b> To facilitate communication and collaboration<br />
+<b>D:</b> To facilitate a central back-up of source code<br />
+</p>
 
-#### CI check: why version control
+<p><!-- .element class="fragment" -->
+<font style="color:#FF0000; font-weight: bold">A:</font> To facilitate roll backs and roll forwards<br />
+<font style="color:#FF0000; font-weight: bold">B:</font> To facilitate seamless branching and merging<br />
+<font style="color:#00FF00; font-weight: bold">C:</font> To facilitate communication and collaboration<br />
+<font style="color:#FF0000; font-weight: bold">D:</font> To facilitate a central back-up of source code<br />
+</p>
 
-### What is the primary purpose of a VCS/Git?
-
-* **A**: To facilitate roll backs and roll forwards
-* **B**: To facilitate seamless branching and merging
-* **==&gt;C**: To facilitate communication and collaboration **&lt;==**
-* **D**: To facilitate a central back-up of source code
-
----
-
-### Do you practice Continuous Integration?
-
-[![Continuous Integration](./images/what_is_ci_1.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
+</div>
 
 ---
 
 ### Do you practice Continuous Integration?
 
-[![Continuous Integration](./images/what_is_ci_2.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
-
----
-
-### Do you practice Continuous Integration?
-
-[![Continuous Integration](./images/what_is_ci_3.png)](https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html)
+<div class="r-stack">
+  <a class="fragment" href="https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html"><img alt="Continuous Integration" src="./images/what_is_ci_1.png"/></a>
+  <a class="fragment" href="https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html"><img alt="Continuous Integration" src="./images/what_is_ci_2.png"/></a>
+  <a class="fragment" href="https://thinkinglabs.io/2020/03/23/continuous-integration-is-not-a-tooling-problem.html"><img alt="Continuous Integration" src="./images/what_is_ci_3.png"/></a>
+</div>
 
 ---
 
@@ -169,21 +149,23 @@ Zeger Hendrikse
 
 ### What does Continuous Integration mean in practice?
 
-* **A**: Building your application and running your unit tests on a server
-* **B**: Creating releasable artifacts using a CI pipeline
-* **C**: Automating all aspects that are required to build your software
-* **D**: Running checks locally, direct commits on trunk and subsequent automated builds
+<div class="r-stack" align="left">
 
----
+<p><!-- .element class="fragment" -->
+<b>A:</b> Building your application and running your unit tests on a server<br />
+<b>B:</b> Creating releasable artifacts using a CI pipeline<br />
+<b>C:</b> Automating all aspects that are required to build your software<br />
+<b>D:</b> Running checks locally, direct commits on trunk and subsequent automated builds<br />
+</p>
 
-#### CI final check
+<p><!-- .element class="fragment" -->
+<font style="color:#FF0000; font-weight: bold">A:</font> Building your application and running your unit tests on a server<br />
+<font style="color:#FF0000; font-weight: bold">B:</font> Creating releasable artifacts using a CI pipeline<br />
+<font style="color:#FF0000; font-weight: bold">C:</font> Automating all aspects that are required to build your software<br />
+<font style="color:#00FF00; font-weight: bold">D:</font> Running checks locally, direct commits on trunk and subsequent automated builds<br />
+</p>
 
-### What does Continuous Integration mean in practice?
-
-* **A**: Building your application and running your unit tests on a server
-* **B**: Creating releasable artifacts using a CI pipeline
-* **C**: Automating all aspects that are required to build your software
-* **==&gt;D**: Running checks locally, direct commits on trunk and subsequent automated builds **&lt;==**
+</div>
 
 ---
 
@@ -217,44 +199,46 @@ Zeger Hendrikse
 
 ### Which is the odd one out?
 
-* **A** Integrate early and often
-* **B** Small batch size (containing changes)
-* **C** Pair programming
-* **D** Pull requests
+<div class="r-stack" align="left">
 
----
+<p><!-- .element class="fragment" -->
+<b>A:</b> Integrate early and often<br />
+<b>B:</b> Small batch size (containing changes)<br />
+<b>C:</b> Pair programming<br />
+<b>D:</b> Pull requests<br />
+</p>
 
-#### Third question: amplify feedback loops
+<p><!-- .element class="fragment" -->
+<font style="color:#00FF00; font-weight: bold">A:</font> Integrate early and often<br />
+<font style="color:#00FF00; font-weight: bold">B:</font> Small batch size (containing changes)<br />
+<font style="color:#00FF00; font-weight: bold">C:</font> Pair programming<br />
+<font style="color:#FF0000; font-weight: bold">D:</font> Pull requests<br />
+</p>
 
-### Which is the odd one out?
-
-* **A** Integrate early and often
-* **B** Small batch size (containing changes)
-* **C** Pair programming
-* **==&gt;D** Pull requests **&lt;==**
+</div>
 
 ---
 
 ### Negative effects of branches
 
-- Delays integration 
-<!-- .element: class="fragment"-->
-  - Slower feedback loops
-<!-- .element: class="fragment"-->
-  - Kills continuous integration
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  Delays integration 
+  - <!-- .element: class="fragment"-->
+    Slower feedback loops
+  - <!-- .element: class="fragment"-->
+    Kills continuous integration
 
-- Increased change batch size
-<!-- .element: class="fragment"-->
-  - Slower feedback loops
-<!-- .element: class="fragment"-->
-  - Decreased deployment frequency
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  Increased change batch size
+  - <!-- .element: class="fragment"-->
+    Slower feedback loops
+  - <!-- .element: class="fragment"-->
+    Decreased deployment frequency
 
-- Kills communication 
-<!-- .element: class="fragment"-->
-  - Headphone/hero developers!
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  Kills communication 
+  - <!-- .element: class="fragment"-->
+    Headphone/hero developers!
 
 ---
 
@@ -317,14 +301,14 @@ Zeger Hendrikse
 
 ### FEP: Segregation of Duties (SoD)
 
-- Finance: mortgage requestor approves his own mortgage request 
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  Finance: mortgage requestor approves his own mortgage request 
 
-- IT: developer writes and tests his own code
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  IT: developer writes and tests his own code
 
-- [Etc.](https://simplicable.com/new/four-eyes-principle)
-<!-- .element: class="fragment"-->
+- <!-- .element: class="fragment"-->
+  [Etc.](https://simplicable.com/new/four-eyes-principle)
 
 ---
 
@@ -341,12 +325,13 @@ No one should be able to push his code and tests single-handedly to PRD
 
 ### What usually goes wrong
 
-- And thus... what would the Pavlov reaction be?
+- <!-- .element: class="fragment"-->
+  And thus... what would the Pavlov reaction be?
   ![Pavlov](./images/pavlov-de-stopper.gif)
 
-- The answer to life, the universe and everything:
+- <!-- .element: class="fragment"-->
+  The answer to life, the universe and everything:
   ![Git](./images/Git-Icon.png)
-<!-- .element: class="fragment"-->
 
 ---
 
